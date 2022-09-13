@@ -40,10 +40,6 @@ const HomePage = () => {
           <div>
             {/* <MapComponent /> */}
             <MapChart />
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eum
-            non doloremque repudiandae laudantium vero maiores. Nam, perferendis
-            natus ducimus a veniam, libero accusantium, velit quas sequi iste
-            eos laboriosam!
           </div>
         </div>
       </div>

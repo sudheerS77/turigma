@@ -31,22 +31,24 @@ const MapChart = () => {
 
   return (
     <>
-      <ComposableMap projection="geoAlbersUsa">
-        <Geographies geography={geoUrl}>
-          {({ geographies }) =>
-            geographies.map((geo) => {
-              const cur = data.find((s) => s.id === geo.id);
-              return (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  fill={colorScale(cur ? cur.unemployment_rate : "#EEE")}
-                />
-              );
-            })
-          }
-        </Geographies>
-      </ComposableMap>
+      <div className="bg-gray-50 border border-gray-100 shadow-xl">
+        <ComposableMap projection="geoAlbersUsa">
+          <Geographies geography={geoUrl}>
+            {({ geographies }) =>
+              geographies.map((geo) => {
+                const cur = data.find((s) => s.id === geo.id);
+                return (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    fill={colorScale(cur ? cur.unemployment_rate : "#EEE")}
+                  />
+                );
+              })
+            }
+          </Geographies>
+        </ComposableMap>
+      </div>
     </>
   );
 };
