@@ -8,7 +8,7 @@ const SettingsComponent = () => {
     const [state, setState] = useState({ x: 10, y: 10 });
   return (
     <>
-      <div className="flex flex-col items-start gap-2 mt-5">
+      <div className="flex flex-col items-start gap-2 mt-5 shadow-xl px-3 py-2 border border-gray-100">
         <h4>Settings</h4>
         <span className="w-1/2">
           <Slider
@@ -21,7 +21,7 @@ const SettingsComponent = () => {
                 width: "600px",
               },
               active: {
-                backgroundColor: "lightgreen",
+                backgroundColor: "#0000FF",
               },
             }}
           />
