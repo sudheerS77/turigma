@@ -28,6 +28,10 @@ const SettingsComponent = () => {
           {state.x}
         </span>
         <div className="flex items-center gap-5 text-xl font-semibold">
+          Select Warehouse
+          <DropDown />
+        </div>
+        <div className="flex items-center gap-5 text-xl font-semibold">
           Demand
           <DropDown />
         </div>
