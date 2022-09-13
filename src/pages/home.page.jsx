@@ -6,6 +6,8 @@ import CostComponents from '../components/homePageComponents/cost.Components';
 import SettingsComponent from '../components/homePageComponents/settings.components';
 import TableComponent from "../components/homePageComponents/table";
 import TopChart from "../components/homePageComponents/topChart";
+import MapComponent from "../components/homePageComponents/mapChart";
+import MapChart from "../components/homePageComponents/mapChart";
 const HomePage = () => {
   return (
     <>
@@ -32,10 +34,17 @@ const HomePage = () => {
         </div>
         <div className="w-1/2">
           <CostComponents />
-          <div className=''>           
+          <div className="">
             <TopChart />
           </div>
-          <div></div>
+          <div>
+            {/* <MapComponent /> */}
+            <MapChart />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eum
+            non doloremque repudiandae laudantium vero maiores. Nam, perferendis
+            natus ducimus a veniam, libero accusantium, velit quas sequi iste
+            eos laboriosam!
+          </div>
         </div>
       </div>
     </>
