@@ -31,7 +31,50 @@ const SettingsComponent = () => {
           Select Warehouse
           <DropDown />
         </div>
-        <div className="flex items-center gap-5 text-xl font-semibold">
+        <div className="flex flex-col items-start justify-center">
+          <div className="flex items-center justify-center gap-2">
+            <h4 className="text-sm font-semibold bg-blue-900 text-gray-50 px-2 py-1 rounded-md">
+              Forecast Tolerage (in %) - [confidence interval]
+            </h4>
+            <h5 className="text-sm font-semibold text-blue-900 bg-gray-200 px-2 py-1 rounded-md">
+              10%
+            </h5>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <h4 className="text-sm font-semibold bg-blue-900 text-gray-50 px-2 py-1 rounded-md">
+              StockOut SLA index(in %) - [0%=High SLA, 100% = min inv cost]
+            </h4>
+            <h5 className="text-sm font-semibold text-blue-900 bg-gray-200 px-2 py-1 rounded-md">
+              0%
+            </h5>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <h4 className="text-sm font-semibold bg-blue-900 text-gray-50 px-2 py-1 rounded-md">
+              Buffer Stock Level(% of expected inventory level)
+            </h4>
+            <h5 className="text-sm font-semibold text-blue-900 bg-gray-200 px-2 py-1 rounded-md">
+              10%
+            </h5>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <h4 className="text-sm font-semibold bg-blue-900 text-gray-50 px-2 py-1 rounded-md">
+              No of Weeks in Forecast Periiod
+            </h4>
+            <h5 className="text-sm font-semibold text-blue-900 bg-gray-200 px-2 py-1 rounded-md">
+              14
+            </h5>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <h4 className="text-sm font-semibold bg-blue-900 text-gray-50 px-2 py-1 rounded-md">
+              AverageMargin (in %) - for stock out loos estimation
+            </h4>
+            <h5 className="text-sm font-semibold text-blue-900 bg-gray-200 px-2 py-1 rounded-md">
+              50%
+            </h5>
+          </div>
+        </div>
+
+        {/* <div className="flex items-center gap-5 text-xl font-semibold">
           Demand
           <DropDown />
         </div>
@@ -46,7 +89,7 @@ const SettingsComponent = () => {
         <div className="flex items-center gap-5 text-xl font-semibold">
           Warehouses
           <DropDown />
-        </div>
+        </div> */}
         <div className="w-full">
           <TableComponent />
         </div>
