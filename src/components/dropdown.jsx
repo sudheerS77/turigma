@@ -6,7 +6,11 @@ function DropDown() {
   const { id } = useParams();
   return (
     <Dropdown>
-      <Dropdown.Toggle variant="primary" id="dropdown-basic">
+      <Dropdown.Toggle
+        variant=""
+        id="dropdown-basic"
+        style={{ background: "darkblue", color: "white" }}
+      >
         {id ? id : "select warehouse"}
       </Dropdown.Toggle>
 

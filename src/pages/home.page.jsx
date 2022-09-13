@@ -112,7 +112,7 @@ const HomePage = () => {
               <div className="w-full flex items-center justify-center gap-5">
                 <button className="text-gray-50 bg-blue-900 px-3 py-2 rounded-md text-xl font-semibold flex items-center justify-center gap-2 shadow-xl">
                   Run Simulation
-                  <MdPlayArrow className="w-7 h-7 text-blue-900" />
+                  <MdPlayArrow className="w-7 h-7" />
                 </button>
                 <button className="text-gray-50 bg-blue-900 px-3 py-2 rounded-md text-xl font-semibold flex items-center justify-center gap-2 shadow-xl">
                   Export Simulation
