@@ -4,8 +4,8 @@ import { MdPlayArrow } from 'react-icons/md';
 import { BiExport, BiImport } from 'react-icons/bi';
 import CostComponents from '../components/homePageComponents/cost.Components';
 import SettingsComponent from '../components/homePageComponents/settings.components';
-import TableComponent from '../components/homePageComponents/table';
-
+import TableComponent from "../components/homePageComponents/table";
+import TopChart from "../components/homePageComponents/topChart";
 const HomePage = () => {
   return (
     <>
@@ -32,12 +32,14 @@ const HomePage = () => {
         </div>
         <div className="w-1/2">
           <CostComponents />
-          <div></div>
+          <div className=''>           
+            <TopChart />
+          </div>
           <div></div>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default HomePage
