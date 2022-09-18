@@ -2,15 +2,15 @@ import React, {useState} from 'react'
 import Slider from 'react-input-slider';
 import DropDown from '../dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TableComponent from './table';
+import TableComponent from "./table.component";
 
 const SettingsComponent = () => {
-    const [state, setState] = useState({ x: 10, y: 10 });
+  const [state, setState] = useState({ x: 10, y: 10 });
   return (
     <>
-      <div className="flex flex-col items-start gap-8 mt-5 shadow-xl px-3 py-2 border border-gray-100">
+      <div className="w-full flex flex-col items-start gap-3 shadow-xl px-3 py-2 border border-gray-100">
         <h4>Settings</h4>
-        <span className="w-1/2">
+        {/* <span className="w-1/2">
           <Slider
             axis="x"
             x={state.x}
@@ -26,8 +26,8 @@ const SettingsComponent = () => {
             }}
           />
           {state.x}
-        </span>
-        <div className="flex items-center gap-5 text-xl font-semibold border border-gray-100 w-full p-2 rounded-md shadow-md">
+        </span> */}
+        <div className="flex items-center justify-center bg-gray-100 gap-5 text-lg font-semibold border border-gray-300 w-full p-2 rounded-md shadow-md">
           Select Warehouse
           <DropDown />
         </div>
@@ -90,12 +90,9 @@ const SettingsComponent = () => {
           Warehouses
           <DropDown />
         </div> */}
-        <div className="w-full w-full p-2 rounded-md shadow-lg">
-          <TableComponent />
-        </div>
       </div>
     </>
   );
-}
+};
 
 export default SettingsComponent
