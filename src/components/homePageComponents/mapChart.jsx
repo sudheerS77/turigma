@@ -34,7 +34,7 @@ const MapChart = () => {
 
   return (
     <>
-      <div className="bg-gray-50 border border-gray-100 shadow-xl rounded-md">
+      <div className="w-4/12 bg-gray-50 border border-gray-100 shadow-md rounded-md">
         <ComposableMap projection="geoAlbersUsa">
           <Geographies geography={geoUrl}>
             {({ geographies }) =>
