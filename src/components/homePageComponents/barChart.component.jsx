@@ -116,16 +116,16 @@ const BarCharComponent = (value) => {
           bottom: 5,
         }}
       >
-        <CartesianGrid strokeDasharray="3 3" />
+        {/* <CartesianGrid strokeDasharray="3 3" /> */}
         <XAxis dataKey="Date" />
         <YAxis />
-        <Tooltip />
+        {/* <Tooltip /> */}
         <Legend />
-        <Bar dataKey="SKU1" fill="#00008B" />
-        <Bar dataKey="SKU2" fill="#D46381" />
-        <Bar dataKey="SKU3" fill="#165BAA" />
-        <Bar dataKey="SKU4" fill="#FC7979" />
-        <Bar dataKey="SKU5" fill="#0B1354" />
+        <Bar barSize={10} dataKey="SKU1" fill="#00008B" />
+        <Bar barSize={10} dataKey="SKU2" fill="#D46381" />
+        <Bar barSize={10} dataKey="SKU3" fill="#165BAA" />
+        <Bar barSize={10} dataKey="SKU4" fill="#FC7979" />
+        <Bar barSize={10} dataKey="SKU5" fill="#0B1354" />
       </BarChart>
     </div>
   );
@@ -143,3 +143,11 @@ export default BarCharComponent;
 //   "9-Oct": ["4,724", "4,279", "236", "859", "716"],
 //   "10-Oct": ["4,724", "4,279", "236", "859", "716"],
 // },
+
+{
+  /* <Bar barSize={10} dataKey="SKU1" fill="#00008B" />
+<Bar barSize={10} dataKey="SKU2" fill="#D46381" />
+<Bar barSize={10} dataKey="SKU3" fill="#165BAA" />
+<Bar barSize={10} dataKey="SKU4" fill="#FC7979" />
+<Bar barSize={10} dataKey="SKU5" fill="#0B1354" /> */
+}
