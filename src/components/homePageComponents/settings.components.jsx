@@ -9,7 +9,7 @@ const SettingsComponent = () => {
   return (
     <>
       <div className="w-3/12 flex flex-col items-start gap-3 shadow-xl px-3 py-2 border border-gray-100 rounded-md">
-        <h4 className="text-xl font-semibold">Settings</h4>
+        <h4 className="text-xl font-semibold">Input Metrics</h4>
         {/* <span className="w-1/2">
           <Slider
             axis="x"
@@ -31,9 +31,9 @@ const SettingsComponent = () => {
           Select Warehouse
           <DropDown />
         </div>
-        <div className="flex flex-col items-start justify-center w-full p-2 rounded-md shadow-md">
+        <div className="flex flex-col items-end justify-center w-full p-2 rounded-md shadow-md">
           <div className="flex items-center justify-center gap-2">
-            <h4 className="text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
+            <h4 className="w-3/4 text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
               Forecast Tolerage (in %) - [confidence interval]
             </h4>
             <h5 className="text-sm font-semibold text-blue-900 bg-gray-200 px-2 py-1 rounded-md">
@@ -41,7 +41,7 @@ const SettingsComponent = () => {
             </h5>
           </div>
           <div className="flex items-center justify-center gap-2">
-            <h4 className="text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
+            <h4 className="w-3/4 text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
               StockOut SLA index(in %) - [0%=High SLA, 100% = min inv cost]
             </h4>
             <h5 className="text-sm font-semibold text-dark-blue bg-gray-200 px-2 py-1 rounded-md">
@@ -49,23 +49,23 @@ const SettingsComponent = () => {
             </h5>
           </div>
           <div className="flex items-center justify-center gap-2">
-            <h4 className="text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
+            <h4 className="w-3/4 text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
               Buffer Stock Level(% of expected inventory level)
             </h4>
             <h5 className="text-sm font-semibold text-dark-blue bg-gray-200 px-2 py-1 rounded-md">
               10%
             </h5>
           </div>
-          <div className="flex items-center justify-center gap-2">
-            <h4 className="text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
+          <div className="w-full flex items-center justify-center gap-2">
+            <h4 className="w-3/4 text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
               No of Weeks in Forecast Periiod
             </h4>
             <h5 className="text-sm font-semibold text-dark-blue bg-gray-200 px-2 py-1 rounded-md">
               14
             </h5>
           </div>
-          <div className="flex items-center justify-center gap-2">
-            <h4 className="text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
+          <div className="w-full flex items-center justify-center gap-2">
+            <h4 className="w-3/4 text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
               AverageMargin (in %) - for stock out loos estimation
             </h4>
             <h5 className="text-sm font-semibold text-dark-blue bg-gray-200 px-2 py-1 rounded-md">

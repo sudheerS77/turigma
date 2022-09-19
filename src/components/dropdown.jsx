@@ -123,8 +123,8 @@ export default function MenuListComposition() {
                     onKeyDown={handleListKeyDown}
                   >
                     {[...Array(46)].map((e, i) => (
-                      <Link to={`/${i}`}>
-                        <MenuItem onClick={handleClose}>{i}</MenuItem>
+                      <Link to={`/${i + 1}`}>
+                        <MenuItem onClick={handleClose}>{i + 1}</MenuItem>
                       </Link>
                     ))}
                   </MenuList>

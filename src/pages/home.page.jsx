@@ -38,13 +38,17 @@ const HomePage = () => {
           </h4>
           <div className="w-full flex items-start justify-around py-5 bg-white border border-gray-100 rounded-md shadow-xl">
             <SettingsComponent />
-            {id ? <MetriceComponent data={mapData} /> : <Metrice />}
+            {id && id > 0 && id <= 2 ? (
+              <MetriceComponent data={mapData} />
+            ) : (
+              <Metrice />
+            )}
             <MapChart data={id} />
           </div>
         </div>
         <div>
           <h4 className="text-center text-2xl font-bold">
-            Inventory Levek of each SKU (for given WH)
+            Inventory Level of each SKU (for given WH)
           </h4>
           <TopChart data={mapData} />
         </div>
