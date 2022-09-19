@@ -3,39 +3,46 @@ import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { scaleQuantize } from "d3-scale";
 import { csv } from "d3-fetch";
 
+
+import StatesMap from "../homePageComponents/stateMap";
+
+import { GRAPH_COLORS } from "../constants/graph_color";
+import { ALL_STATE_CODES } from "../constants/STATES";
+import { useParams } from "react-router-dom";
+
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json";
 
-const colorScale = scaleQuantize()
-  .domain([1, 10])
-  .range([
-    "#0000FF",
-    // "#0047ab",
-    // "#003366",
-    // "#2a52be",
-    // "#0073cf",
-    // "#00008b",
-    // "#120a8f",
-    // "#0f52ba",
-    // "#4d4dff",
-  ]);
+const colorScale = scaleQuantize().domain([1, 10]).range([
+  "#0000FF",
+  // "#0047ab",
+  // "#003366",
+  // "#2a52be",
+  // "#0073cf",
+  // "#00008b",
+  // "#120a8f",
+  // "#0f52ba",
+  // "#4d4dff",
+]);
 
 const MapChart = () => {
-  const [data, setData] = useState([]);
+  const { id } = useParams();
+  const [statesColorConfig, setStatesColorConfig] = useState({});
 
+  const randomizeData = () => {};
   useEffect(() => {
-    // https://www.bls.gov/lau/
-    csv(geoUrl).then(
-      (counties) => {
-        setData(counties);
-        console.log(counties);
-      }
-    );
-  }, []);
+    const RANDOM_COLOR_CONFIG = {};
+    const stateName = ALL_STATE_CODES[id];
+    const randomColorIndex = Math.floor(Math.random() * 5);
+    RANDOM_COLOR_CONFIG[stateName] = {
+      fill: GRAPH_COLORS[randomColorIndex],
+    };
 
+    setStatesColorConfig(RANDOM_COLOR_CONFIG);
+  }, [id]);
   return (
     <>
       <div className="w-4/12 bg-gray-50 border border-gray-100 shadow-md rounded-md">
-        <ComposableMap projection="geoAlbersUsa">
+        {/* <ComposableMap projection="geoAlbersUsa">
           <Geographies geography={geoUrl}>
             {({ geographies }) =>
               geographies.map((geo) => {
@@ -50,7 +57,15 @@ const MapChart = () => {
               })
             }
           </Geographies>
-        </ComposableMap>
+        </ComposableMap> */}
+        <div className="input-map-container">
+          <div style={{ flex: 0.6, textAlign: "center", padding: 24 }}>
+            {/* <button onClick={randomizeData}>Go Crazy!</button> */}
+          </div>
+          <div style={{ flex: 0.4 }}>
+            <StatesMap {...{ statesColorConfig }} />
+          </div>
+        </div>
       </div>
     </>
   );
@@ -186,3 +201,4 @@ export default MapChart;
 // };
 
 // export default MapChart;
+

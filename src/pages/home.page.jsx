@@ -11,17 +11,17 @@ import OptionsComponent from "../components/homePageComponents/options.component
 import MetriceComponent from "../components/homePageComponents/metrices.component";
 //Walmart Data
 import data from "../components/homePageComponents/warehouse.json";
-import walmart from "../components/homePageComponents/walmart.json";
+import Metrice from "../components/homePageComponents/metrice";
 const HomePage = () => {
   const { id } = useParams();
-  const mapData = [data[id-1]];
+  const mapData = [data[id - 1]];
   // walmart.find((item) => {
   //   if (item.name === Number(id) && item.Holiday_Flag !== 0) {
   //     data.push(item);
   //     console.log(data);
   //   }
   // });
-  
+
   // useEffect(() => {
   //   window.scroll({
   //     top: 650,
@@ -32,16 +32,20 @@ const HomePage = () => {
   return (
     <>
       <div className="w-full flex flex-col items-center justify-center gap-10 px-10">
-        <div>          
-        <h4 className="text-center text-2xl font-bold">Inventory Placement What-If Simulation: Channel Mode</h4>
-        <div className="w-full flex items-start justify-around py-5 bg-white border border-gray-100 rounded-md shadow-xl">
-          <SettingsComponent />
-            <MetriceComponent />
-            <MapChart />
-        </div>
+        <div>
+          <h4 className="text-center text-2xl font-bold">
+            Inventory Placement What-If Simulation: Channel Mode
+          </h4>
+          <div className="w-full flex items-start justify-around py-5 bg-white border border-gray-100 rounded-md shadow-xl">
+            <SettingsComponent />
+            {id ? <MetriceComponent data={mapData} /> : <Metrice />}
+            <MapChart data={id} />
+          </div>
         </div>
         <div>
-        <h4 className="text-center text-2xl font-bold">Inventory Levek of each SKU (for given WH)</h4>
+          <h4 className="text-center text-2xl font-bold">
+            Inventory Levek of each SKU (for given WH)
+          </h4>
           <TopChart data={mapData} />
         </div>
       </div>
