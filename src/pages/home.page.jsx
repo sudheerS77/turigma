@@ -12,15 +12,12 @@ import MetriceComponent from "../components/homePageComponents/metrices.componen
 //Walmart Data
 import data from "../components/homePageComponents/warehouse.json";
 import Metrice from "../components/homePageComponents/metrice";
+import { ALL_STATE_CODES } from "../components/constants/STATES";
+
 const HomePage = () => {
   const { id } = useParams();
   const mapData = [data[id - 1]];
-  // walmart.find((item) => {
-  //   if (item.name === Number(id) && item.Holiday_Flag !== 0) {
-  //     data.push(item);
-  //     console.log(data);
-  //   }
-  // });
+  const stateName = ALL_STATE_CODES[id];
 
   // useEffect(() => {
   //   window.scroll({
@@ -48,7 +45,8 @@ const HomePage = () => {
         </div>
         <div>
           <h4 className="text-center text-2xl font-bold">
-            Inventory Level of each SKU (for given WH)
+            Inventory Level of each SKU (for region {stateName} & Warehouse -
+            {id})
           </h4>
           <TopChart data={mapData} />
         </div>

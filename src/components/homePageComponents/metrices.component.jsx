@@ -89,55 +89,64 @@ const MetriceComponent = (props) => {
     <>
       <div className="w-4/12 border border-gray-100 rounded-md shadow-md p-2.5">
         <h6 className="text-xl font-bold text-center py-2 text-center">
-          Open Metrics
+          Output Metrics
         </h6>
-        <div className="flex flex-wrap gap-4">
+
+        <div className="flex flex-wrap gap-4 text-gray-50">
           {/* HOLDING */}
-          <div className="w-full text-md font-bold flex items-center justify-around bg-dark-blue text-gray-50">
-            <p className="w-20">Inv. Holding Case</p>
-            <div className="border-r border-l px-2 py-1  w-20 text-center">
-              <p className="text-gray-300">Total</p>
+          <div className="grid grid-cols-4 gap-3 bg-azure-blue items-center justify-center font-semibold">
+            <div className="text-center flex justify-center items-center border-r h-full">
+              Inv. Holding Case
+            </div>
+            <div className="text-center ">
+              <p className="">Total</p>
               <h6 className="text-xl">{invHoldingCostTotal}</h6>
             </div>
-            <div className="border-r px-2 py-1  w-20 text-center">
+            <div className="text-center">
               <p>Average</p>
               <h6 className="text-xl">{Math.round(invHoldingCostTotal / 5)}</h6>
             </div>
-            <div className=" px-2 py-1  w-20 text-center">
+            <div className="text-center">
               <p>Median</p>
               <h6 className="text-xl">{medianHoldingValue}</h6>
             </div>
           </div>
+
           {/* STOCK OUT LOSS */}
-          <div className="w-full text-md font-bold flex items-center justify-around bg-dark-blue text-gray-50">
-            <p className="w-20">Stock out Loss</p>
-            <div className="border-r border-l px-2 py-1  w-20 text-center">
-              <p>Total</p>
+          <div className="grid grid-cols-4 gap-3 bg-azure-blue items-center justify-center font-semibold">
+            <div className="text-center flex justify-center items-center border-r h-full">
+              Stock out Loss
+            </div>
+            <div className="text-center">
+              <p className="">Total</p>
               <h6 className="text-xl">{Math.abs(stockOutLossTotal)}</h6>
             </div>
-            <div className="border-r px-2 py-1  w-20 text-center">
+            <div className="text-center">
               <p>Average</p>
               <h6 className="text-xl">
                 {Math.abs(Math.round(stockOutLossTotal / 5))}
               </h6>
             </div>
-            <div className=" px-2 py-1  w-20 text-center">
+            <div className="text-center">
               <p>Median</p>
-              <h6 className="text-xl">{Math.abs(medianStockOutLossValue)}</h6>
+              <h6 className="text-xl">{medianStockOutLossValue}</h6>
             </div>
           </div>
+
           {/* INVENTORY TURN */}
-          <div className="w-full text-md font-bold flex items-center justify-around bg-dark-blue text-gray-50">
-            <p className="w-20 text-center">Inventory Turns</p>
-            <div className="border-r border-l px-2 py-1  w-20 text-center">
-              <p>Average</p>
-              <h6 className="text-xl">{Math.round(invTurnTotal / 5)}</h6>
+          <div className="grid grid-cols-4 gap-3 bg-azure-blue items-center justify-center font-semibold">
+            <div className="text-center flex justify-center items-center border-r h-full">
+              Inventory Turns
             </div>
-            <div className="border-r px-2 py-1 w-20 text-center  w-20 text-center">
+            <div className="text-center">
+              <p className="">Average</p>
+              <h6 className="text-xl">{Math.round(invTurnTotal / 5)} </h6>
+            </div>
+            <div className="text-center">
               <p>Median</p>
               <h6 className="text-xl">{medianTurnValues}</h6>
             </div>
-            <div className=" px-2 py-1  w-20 text-center">
+            <div className="text-center">
               <p>Min</p>
               <h6 className="text-xl">{sortedInvTurnValues[0]}</h6>
             </div>
@@ -149,3 +158,21 @@ const MetriceComponent = (props) => {
 };
 
 export default MetriceComponent;
+
+{
+  /* <div className="w-full text-md font-bold flex items-center justify-around bg-blue-green text-gray-50">
+            <p className="w-20">Inv. Holding Case</p>
+            <div className="border-r border-l px-2 py-1 w-20 text-center">
+              <p className="">Total</p>
+              <h6 className="text-xl">{invHoldingCostTotal}</h6>
+            </div>
+            <div className="border-r px-2 py-1 w-20 text-center">
+              <p>Average</p>
+              <h6 className="text-xl">{Math.round(invHoldingCostTotal / 5)}</h6>
+            </div>
+            <div className=" px-2 py-1  w-20 text-center">
+              <p>Median</p>
+              <h6 className="text-xl">{medianHoldingValue}</h6>
+            </div>
+          </div> */
+}

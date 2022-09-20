@@ -3,6 +3,7 @@ import Slider from 'react-input-slider';
 import DropDown from '../dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TableComponent from "./table.component";
+import WHDropdown from "../WHDropdown";
 
 const SettingsComponent = () => {
   const [state, setState] = useState({ x: 10, y: 10 });
@@ -29,48 +30,37 @@ const SettingsComponent = () => {
         </span> */}
         <div className="flex items-center justify-center bg-gray-100 gap-5 text-md font-semibold border border-gray-300 w-full px-2 py-1 rounded-md shadow-md">
           Select Warehouse
-          <DropDown />
+          {/* <DropDown /> */}
+          <WHDropdown />
         </div>
-        <div className="flex flex-col items-end justify-center w-full p-2 rounded-md shadow-md">
-          <div className="flex items-center justify-center gap-2">
-            <h4 className="w-3/4 text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
+        <div className="w-full flex flex-col items-end justify-center gap-3 w-full p-2 rounded-md shadow-md">
+          <div className="w-full flex items-center justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
+            <h4 className="w-3/4 text-xs font-semibold  text-gray-50">
               Forecast Tolerage (in %) - [confidence interval]
             </h4>
-            <h5 className="text-sm font-semibold text-blue-900 bg-gray-200 px-2 py-1 rounded-md">
-              10%
-            </h5>
+            <h5 className="text-sm font-semibold text-gray-50">10%</h5>
           </div>
-          <div className="flex items-center justify-center gap-2">
-            <h4 className="w-3/4 text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
+          <div className="flex items-center font-semibold justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
+            <h4 className="w-3/4 text-xs">
               StockOut SLA index(in %) - [0%=High SLA, 100% = min inv cost]
             </h4>
-            <h5 className="text-sm font-semibold text-dark-blue bg-gray-200 px-2 py-1 rounded-md">
-              0%
-            </h5>
+            <h5 className="text-sm">0%</h5>
           </div>
-          <div className="flex items-center justify-center gap-2">
-            <h4 className="w-3/4 text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
+          <div className="flex items-center justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
+            <h4 className="w-3/4 text-xs">
               Buffer Stock Level(% of expected inventory level)
             </h4>
-            <h5 className="text-sm font-semibold text-dark-blue bg-gray-200 px-2 py-1 rounded-md">
-              10%
-            </h5>
+            <h5 className="text-sm">10%</h5>
           </div>
-          <div className="w-full flex items-center justify-center gap-2">
-            <h4 className="w-3/4 text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
-              No of Weeks in Forecast Periiod
-            </h4>
-            <h5 className="text-sm font-semibold text-dark-blue bg-gray-200 px-2 py-1 rounded-md">
-              14
-            </h5>
+          <div className="w-full flex items-center justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
+            <h4 className="w-3/4 text-xs">No of Weeks in Forecast Periiod</h4>
+            <h5 className="text-sm">14</h5>
           </div>
-          <div className="w-full flex items-center justify-center gap-2">
-            <h4 className="w-3/4 text-xs font-semibold bg-dark-blue text-gray-50 px-2 py-1 rounded-md">
+          <div className="w-full flex items-center justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
+            <h4 className="w-3/4 text-xs">
               AverageMargin (in %) - for stock out loos estimation
             </h4>
-            <h5 className="text-sm font-semibold text-dark-blue bg-gray-200 px-2 py-1 rounded-md">
-              50%
-            </h5>
+            <h5 className="text-sm">50%</h5>
           </div>
         </div>
 
