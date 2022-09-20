@@ -88,7 +88,9 @@ const MetriceComponent = (props) => {
   return (
     <>
       <div className="w-4/12 border border-gray-100 rounded-md shadow-md p-2.5">
-        <h6 className="text-xl font-bold text-center py-2">Open Metrics</h6>
+        <h6 className="text-xl font-bold text-center py-2 text-center">
+          Open Metrics
+        </h6>
         <div className="flex flex-wrap gap-4">
           {/* HOLDING */}
           <div className="w-full text-md font-bold flex items-center justify-around bg-dark-blue text-gray-50">

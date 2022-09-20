@@ -119,7 +119,7 @@ const BarCharComponent = (value) => {
         {/* <CartesianGrid strokeDasharray="3 3" /> */}
         <XAxis dataKey="Date" />
         <YAxis />
-        {/* <Tooltip /> */}
+        <Tooltip />
         <Legend />
         <Bar barSize={10} dataKey="SKU1" fill="#00008B" />
         <Bar barSize={10} dataKey="SKU2" fill="#D46381" />
