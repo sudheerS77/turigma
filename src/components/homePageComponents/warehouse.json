@@ -14,9 +14,9 @@
       "Bi weekly Inv Update4": 22992,
       "Bi weekly Inv Update5": 18198,
       "SKU1": 4724,
-      "SKU2": 0,
-      "SKU3": 0,
-      "SKU4": 0,
+      "SKU2": -4279,
+      "SKU3": -236,
+      "SKU4": -859,
       "SKU5": 716,
       "Total Forecast Sales": 5,
       "SKU Price1": 1,
@@ -35,9 +35,9 @@
       "Inv Turn4": 17.46,
       "Inv Turn5": 15.55,
       "Stkout Cost1": 0,
-      "Stkout Cost2": 0,
-      "Stkout Cost3": 0,
-      "Stkout Cost4": 1718,
+      "Stkout Cost2": -4279,
+      "Stkout Cost3": -353,
+      "Stkout Cost4": -1718,
       "Stkout Cost5": 0
     },
     {
@@ -58,17 +58,7 @@
       "SKU3": 4668,
       "SKU4": 12946,
       "SKU5": 14101,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 68731,
-      "Holding Cost2": 45920,
-      "Holding Cost3": 7098,
-      "Holding Cost4": 18725,
-      "Holding Cost5": 20240
+      "Total Forecast Sales": 5
     },
     {
       "WH": 1,
@@ -88,17 +78,7 @@
       "SKU3": 1120,
       "SKU4": 4032,
       "SKU5": 7234,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 68731,
-      "Holding Cost2": 45920,
-      "Holding Cost3": 7098,
-      "Holding Cost4": 18725,
-      "Holding Cost5": 20240
+      "Total Forecast Sales": 5
     },
     {
       "WH": 1,
@@ -118,17 +98,7 @@
       "SKU3": 6181,
       "SKU4": 18035,
       "SKU5": 19889,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 68731,
-      "Holding Cost2": 45920,
-      "Holding Cost3": 7098,
-      "Holding Cost4": 18725,
-      "Holding Cost5": 20240
+      "Total Forecast Sales": 5
     },
     {
       "WH": 1,
@@ -148,17 +118,7 @@
       "SKU3": 2965,
       "SKU4": 7704,
       "SKU5": 13179,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 68731,
-      "Holding Cost2": 45920,
-      "Holding Cost3": 7098,
-      "Holding Cost4": 18725,
-      "Holding Cost5": 20240
+      "Total Forecast Sales": 5
     },
     {
       "WH": 1,
@@ -178,17 +138,7 @@
       "SKU3": 7838,
       "SKU4": 21029,
       "SKU5": 24866,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 68731,
-      "Holding Cost2": 45920,
-      "Holding Cost3": 7098,
-      "Holding Cost4": 18725,
-      "Holding Cost5": 20240
+      "Total Forecast Sales": 5
     },
     {
       "WH": 1,
@@ -208,17 +158,7 @@
       "SKU3": 4301,
       "SKU4": 11144,
       "SKU5": 19124,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 68731,
-      "Holding Cost2": 45920,
-      "Holding Cost3": 7098,
-      "Holding Cost4": 18725,
-      "Holding Cost5": 20240
+      "Total Forecast Sales": 5
     },
     {
       "WH": 1,
@@ -238,17 +178,7 @@
       "SKU3": 9399,
       "SKU4": 21913,
       "SKU5": 20661,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 68731,
-      "Holding Cost2": 45920,
-      "Holding Cost3": 7098,
-      "Holding Cost4": 18725,
-      "Holding Cost5": 20240
+      "Total Forecast Sales": 5
     },
     {
       "WH": 1,
@@ -268,17 +198,7 @@
       "SKU3": 5847,
       "SKU4": 11810,
       "SKU5": 13820,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 68731,
-      "Holding Cost2": 45920,
-      "Holding Cost3": 7098,
-      "Holding Cost4": 18725,
-      "Holding Cost5": 20240
+      "Total Forecast Sales": 5
     },
     {
       "WH": 1,
@@ -298,17 +218,7 @@
       "SKU3": 9671,
       "SKU4": 24635,
       "SKU5": 23244,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 68731,
-      "Holding Cost2": 45920,
-      "Holding Cost3": 7098,
-      "Holding Cost4": 18725,
-      "Holding Cost5": 20240
+      "Total Forecast Sales": 5
     },
     {
       "WH": 1,
@@ -328,17 +238,7 @@
       "SKU3": 5058,
       "SKU4": 14590,
       "SKU5": 714113,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 68731,
-      "Holding Cost2": 45920,
-      "Holding Cost3": 7098,
-      "Holding Cost4": 18725,
-      "Holding Cost5": 20240
+      "Total Forecast Sales": 5
     },
     {
       "WH": 1,
@@ -358,17 +258,7 @@
       "SKU3": 8633,
       "SKU4": 25038,
       "SKU5": 19399,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 68731,
-      "Holding Cost2": 45920,
-      "Holding Cost3": 7098,
-      "Holding Cost4": 18725,
-      "Holding Cost5": 20240
+      "Total Forecast Sales": 5
     },
     {
       "WH": 1,
@@ -388,17 +278,7 @@
       "SKU3": 5536,
       "SKU4": 15228,
       "SKU5": 12053,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 68731,
-      "Holding Cost2": 45920,
-      "Holding Cost3": 7098,
-      "Holding Cost4": 18725,
-      "Holding Cost5": 20240
+      "Total Forecast Sales": 5
     }
   ],
   [
@@ -421,11 +301,6 @@
       "SKU4": -1145,
       "SKU5": 2858,
       "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
       "Holding Cost1": 98577,
       "Holding Cost2": 63740,
       "Holding Cost3": 10639,
@@ -460,17 +335,7 @@
       "SKU3": 5887,
       "SKU4": 15859,
       "SKU5": 20998,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 98577,
-      "Holding Cost2": 63740,
-      "Holding Cost3": 10639,
-      "Holding Cost4": 23074,
-      "Holding Cost5": 30716
+      "Total Forecast Sales": 5
     },
     {
       "WH": 2,
@@ -490,17 +355,7 @@
       "SKU3": 1875,
       "SKU4": 4952,
       "SKU5": 13084,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 98577,
-      "Holding Cost2": 63740,
-      "Holding Cost3": 10639,
-      "Holding Cost4": 23074,
-      "Holding Cost5": 30716
+      "Total Forecast Sales": 5
     },
     {
       "WH": 2,
@@ -520,17 +375,7 @@
       "SKU3": 9016,
       "SKU4": 22150,
       "SKU5": 29550,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 98577,
-      "Holding Cost2": 63740,
-      "Holding Cost3": 10639,
-      "Holding Cost4": 23074,
-      "Holding Cost5": 30716
+      "Total Forecast Sales": 5
     },
     {
       "WH": 2,
@@ -550,17 +395,7 @@
       "SKU3": 5141,
       "SKU4": 10238,
       "SKU5": 21615,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 98577,
-      "Holding Cost2": 63740,
-      "Holding Cost3": 10639,
-      "Holding Cost4": 23074,
-      "Holding Cost5": 30716
+      "Total Forecast Sales": 5
     },
     {
       "WH": 2,
@@ -580,17 +415,7 @@
       "SKU3": 11911,
       "SKU4": 26576,
       "SKU5": 36222,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 98577,
-      "Holding Cost2": 63740,
-      "Holding Cost3": 10639,
-      "Holding Cost4": 23074,
-      "Holding Cost5": 30716
+      "Total Forecast Sales": 5
     },
     {
       "WH": 2,
@@ -610,17 +435,7 @@
       "SKU3": 7978,
       "SKU4": 13993,
       "SKU5": 29283,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 98577,
-      "Holding Cost2": 63740,
-      "Holding Cost3": 10639,
-      "Holding Cost4": 23074,
-      "Holding Cost5": 30716
+      "Total Forecast Sales": 5
     },
     {
       "WH": 2,
@@ -640,17 +455,7 @@
       "SKU3": 14685,
       "SKU4": 26023,
       "SKU5": 31180,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 98577,
-      "Holding Cost2": 63740,
-      "Holding Cost3": 10639,
-      "Holding Cost4": 23074,
-      "Holding Cost5": 30716
+      "Total Forecast Sales": 5
     },
     {
       "WH": 2,
@@ -670,17 +475,7 @@
       "SKU3": 9235,
       "SKU4": 14396,
       "SKU5": 23857,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 98577,
-      "Holding Cost2": 63740,
-      "Holding Cost3": 10639,
-      "Holding Cost4": 23074,
-      "Holding Cost5": 30716
+      "Total Forecast Sales": 5
     },
     {
       "WH": 2,
@@ -700,17 +495,7 @@
       "SKU3": 14533,
       "SKU4": 30651,
       "SKU5": 36486,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 98577,
-      "Holding Cost2": 63740,
-      "Holding Cost3": 10639,
-      "Holding Cost4": 23074,
-      "Holding Cost5": 30716
+      "Total Forecast Sales": 5
     },
     {
       "WH": 2,
@@ -730,17 +515,7 @@
       "SKU3": 7994,
       "SKU4": 18094,
       "SKU5": 22712,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 98577,
-      "Holding Cost2": 63740,
-      "Holding Cost3": 10639,
-      "Holding Cost4": 23074,
-      "Holding Cost5": 30716
+      "Total Forecast Sales": 5
     },
     {
       "WH": 2,
@@ -760,17 +535,7 @@
       "SKU3": 11421,
       "SKU4": 30417,
       "SKU5": 23785,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 98577,
-      "Holding Cost2": 63740,
-      "Holding Cost3": 10639,
-      "Holding Cost4": 23074,
-      "Holding Cost5": 30716
+      "Total Forecast Sales": 5
     },
     {
       "WH": 2,
@@ -790,17 +555,7 @@
       "SKU3": 7250,
       "SKU4": 18538,
       "SKU5": 15529,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 98577,
-      "Holding Cost2": 63740,
-      "Holding Cost3": 10639,
-      "Holding Cost4": 23074,
-      "Holding Cost5": 30716
+      "Total Forecast Sales": 5
     }
   ],
   [
@@ -823,16 +578,21 @@
       "SKU4": -253,
       "SKU5": 92,
       "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
       "Holding Cost1": 19692,
       "Holding Cost2": 15685,
       "Holding Cost3": 2950,
       "Holding Cost4": 4065,
-      "Holding Cost5": 9237
+      "Holding Cost5": 9237,
+      "Inv Turn1": 15.62,
+      "Inv Turn2": 18.7,
+      "Inv Turn3": 17.78,
+      "Inv Turn4": 17.77,
+      "Inv Turn5": 16.22,
+      "Stkout Cost1": 0,
+      "Stkout Cost2": -1620,
+      "Stkout Cost3": -268,
+      "Stkout Cost4": -506,
+      "Stkout Cost5": 0
     },
     {
       "WH": 3,
@@ -852,17 +612,7 @@
       "SKU3": 2115,
       "SKU4": 2730,
       "SKU5": 5925,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 19692,
-      "Holding Cost2": 15685,
-      "Holding Cost3": 2950,
-      "Holding Cost4": 4065,
-      "Holding Cost5": 9237
+      "Total Forecast Sales": 5
     },
     {
       "WH": 3,
@@ -882,17 +632,7 @@
       "SKU3": 647,
       "SKU4": 799,
       "SKU5": 2873,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 19692,
-      "Holding Cost2": 15685,
-      "Holding Cost3": 2950,
-      "Holding Cost4": 4065,
-      "Holding Cost5": 9237
+      "Total Forecast Sales": 5
     },
     {
       "WH": 3,
@@ -912,17 +652,7 @@
       "SKU3": 2752,
       "SKU4": 4009,
       "SKU5": 9447,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 19692,
-      "Holding Cost2": 15685,
-      "Holding Cost3": 2950,
-      "Holding Cost4": 4065,
-      "Holding Cost5": 9237
+      "Total Forecast Sales": 5
     },
     {
       "WH": 3,
@@ -942,17 +672,7 @@
       "SKU3": 1046,
       "SKU4": 1405,
       "SKU5": 6286,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 19692,
-      "Holding Cost2": 15685,
-      "Holding Cost3": 2950,
-      "Holding Cost4": 4065,
-      "Holding Cost5": 9237
+      "Total Forecast Sales": 5
     },
     {
       "WH": 3,
@@ -972,17 +692,7 @@
       "SKU3": 3091,
       "SKU4": 4473,
       "SKU5": 12178,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 19692,
-      "Holding Cost2": 15685,
-      "Holding Cost3": 2950,
-      "Holding Cost4": 4065,
-      "Holding Cost5": 9237
+      "Total Forecast Sales": 5
     },
     {
       "WH": 3,
@@ -1002,17 +712,7 @@
       "SKU3": 1678,
       "SKU4": 1999,
       "SKU5": 9177,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 19692,
-      "Holding Cost2": 15685,
-      "Holding Cost3": 2950,
-      "Holding Cost4": 4065,
-      "Holding Cost5": 9237
+      "Total Forecast Sales": 5
     },
     {
       "WH": 3,
@@ -1032,17 +732,7 @@
       "SKU3": 3803,
       "SKU4": 4834,
       "SKU5": 8783,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 19692,
-      "Holding Cost2": 15685,
-      "Holding Cost3": 2950,
-      "Holding Cost4": 4065,
-      "Holding Cost5": 9237
+      "Total Forecast Sales": 5
     },
     {
       "WH": 3,
@@ -1062,17 +752,7 @@
       "SKU3": 2153,
       "SKU4": 2505,
       "SKU5": 5736,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 19692,
-      "Holding Cost2": 15685,
-      "Holding Cost3": 2950,
-      "Holding Cost4": 4065,
-      "Holding Cost5": 9237
+      "Total Forecast Sales": 5
     },
     {
       "WH": 3,
@@ -1092,17 +772,7 @@
       "SKU3": 4024,
       "SKU4": 5463,
       "SKU5": 10430,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 19692,
-      "Holding Cost2": 15685,
-      "Holding Cost3": 2950,
-      "Holding Cost4": 4065,
-      "Holding Cost5": 9237
+      "Total Forecast Sales": 5
     },
     {
       "WH": 3,
@@ -1121,17 +791,7 @@
       "SKU3": 2149,
       "SKU4": 3309,
       "SKU5": 5981,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 19692,
-      "Holding Cost2": 15685,
-      "Holding Cost3": 2950,
-      "Holding Cost4": 4065,
-      "Holding Cost5": 9237
+      "Total Forecast Sales": 5
     },
     {
       "WH": 3,
@@ -1151,17 +811,7 @@
       "SKU3": 3801,
       "SKU4": 5917,
       "SKU5": 9581,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 19692,
-      "Holding Cost2": 15685,
-      "Holding Cost3": 2950,
-      "Holding Cost4": 4065,
-      "Holding Cost5": 9237
+      "Total Forecast Sales": 5
     },
     {
       "WH": 3,
@@ -1181,17 +831,7 @@
       "SKU3": 2424,
       "SKU4": 3462,
       "SKU5": 5877,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 19692,
-      "Holding Cost2": 15685,
-      "Holding Cost3": 2950,
-      "Holding Cost4": 4065,
-      "Holding Cost5": 9237
+      "Total Forecast Sales": 5
     }
   ],
   [
@@ -1214,16 +854,21 @@
       "SKU4": -2084,
       "SKU5": 2340,
       "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
       "Holding Cost1": 107626,
       "Holding Cost2": 83052,
       "Holding Cost3": 10949,
       "Holding Cost4": 26607,
-      "Holding Cost5": 41230
+      "Holding Cost5": 41230,
+      "Inv Turn1": 15.63,
+      "Inv Turn2": 18.99,
+      "Inv Turn3": 16.59,
+      "Inv Turn4": 18.04,
+      "Inv Turn5": 14.92,
+      "Stkout Cost1": 0,
+      "Stkout Cost2": -10185,
+      "Stkout Cost3": -82,
+      "Stkout Cost4": -4168,
+      "Stkout Cost5": 0
     },
     {
       "WH": 4,
@@ -1243,17 +888,7 @@
       "SKU3": 7302,
       "SKU4": 19308,
       "SKU5": 25862,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 107626,
-      "Holding Cost2": 83052,
-      "Holding Cost3": 10949,
-      "Holding Cost4": 26607,
-      "Holding Cost5": 41230
+      "Total Forecast Sales": 5
     },
     {
       "WH": 4,
@@ -1273,17 +908,7 @@
       "SKU3": 2892,
       "SKU4": 4246,
       "SKU5": 14390,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 107626,
-      "Holding Cost2": 83052,
-      "Holding Cost3": 10949,
-      "Holding Cost4": 26607,
-      "Holding Cost5": 41230
+      "Total Forecast Sales": 5
     },
     {
       "WH": 4,
@@ -1303,17 +928,7 @@
       "SKU3": 10071,
       "SKU4": 25733,
       "SKU5": 38223,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 107626,
-      "Holding Cost2": 83052,
-      "Holding Cost3": 10949,
-      "Holding Cost4": 26607,
-      "Holding Cost5": 41230
+      "Total Forecast Sales": 5
     },
     {
       "WH": 4,
@@ -1333,17 +948,7 @@
       "SKU3": 5555,
       "SKU4": 9199,
       "SKU5": 27378,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 107626,
-      "Holding Cost2": 83052,
-      "Holding Cost3": 10949,
-      "Holding Cost4": 26607,
-      "Holding Cost5": 41230
+      "Total Forecast Sales": 5
     },
     {
       "WH": 4,
@@ -1363,17 +968,7 @@
       "SKU3": 12174,
       "SKU4": 29569,
       "SKU5": 49166,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 107626,
-      "Holding Cost2": 83052,
-      "Holding Cost3": 10949,
-      "Holding Cost4": 26607,
-      "Holding Cost5": 41230
+      "Total Forecast Sales": 5
     },
     {
       "WH": 4,
@@ -1393,17 +988,7 @@
       "SKU3": 7624,
       "SKU4": 13111,
       "SKU5": 38519,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 107626,
-      "Holding Cost2": 83052,
-      "Holding Cost3": 10949,
-      "Holding Cost4": 26607,
-      "Holding Cost5": 41230
+      "Total Forecast Sales": 5
     },
     {
       "WH": 4,
@@ -1423,17 +1008,7 @@
       "SKU3": 13766,
       "SKU4": 30311,
       "SKU5": 46189,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 107626,
-      "Holding Cost2": 83052,
-      "Holding Cost3": 10949,
-      "Holding Cost4": 26607,
-      "Holding Cost5": 41230
+      "Total Forecast Sales": 5
     },
     {
       "WH": 4,
@@ -1453,17 +1028,7 @@
       "SKU3": 8893,
       "SKU4": 115721,
       "SKU5": 34329,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 107626,
-      "Holding Cost2": 83052,
-      "Holding Cost3": 10949,
-      "Holding Cost4": 26607,
-      "Holding Cost5": 41230
+      "Total Forecast Sales": 5
     },
     {
       "WH": 4,
@@ -1483,17 +1048,7 @@
       "SKU3": 14431,
       "SKU4": 36886,
       "SKU5": 51621,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 107626,
-      "Holding Cost2": 83052,
-      "Holding Cost3": 10949,
-      "Holding Cost4": 26607,
-      "Holding Cost5": 41230
+      "Total Forecast Sales": 5
     },
     {
       "WH": 4,
@@ -1513,17 +1068,7 @@
       "SKU3": 7758,
       "SKU4": 21445,
       "SKU5": 28647,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 107626,
-      "Holding Cost2": 83052,
-      "Holding Cost3": 10949,
-      "Holding Cost4": 26607,
-      "Holding Cost5": 41230
+      "Total Forecast Sales": 5
     },
     {
       "WH": 4,
@@ -1543,17 +1088,7 @@
       "SKU3": 114659,
       "SKU4": 308680,
       "SKU5": 33152,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 107626,
-      "Holding Cost2": 83052,
-      "Holding Cost3": 10949,
-      "Holding Cost4": 26607,
-      "Holding Cost5": 41230
+      "Total Forecast Sales": 5
     },
     {
       "WH": 4,
@@ -1573,17 +1108,7 @@
       "SKU3": 7422,
       "SKU4": 23942,
       "SKU5": 22480,
-      "Total Forecast Sales": 5,
-      "SKU Price1": 1,
-      "SKU Price2": 2,
-      "SKU Price3": 3,
-      "SKU Price4": 4,
-      "SKU Price5": 5,
-      "Holding Cost1": 107626,
-      "Holding Cost2": 83052,
-      "Holding Cost3": 10949,
-      "Holding Cost4": 26607,
-      "Holding Cost5": 41230
+      "Total Forecast Sales": 5
     }
   ]
 ]

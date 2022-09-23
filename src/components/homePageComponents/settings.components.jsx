@@ -38,29 +38,64 @@ const SettingsComponent = () => {
             <h4 className="w-3/4 text-xs font-semibold  text-gray-50">
               Forecast Tolerage (in %) - [confidence interval]
             </h4>
-            <h5 className="text-sm font-semibold text-gray-50">10%</h5>
+            <h5 className="text-black text-sm font-semibold text-gray-50">
+              <input
+                type="text"
+                defaultValue={"10%"}
+                className="px-2 py-1.5 text-center rounded-sm bg-grey-200"
+                style={{ width: "50px" }}
+              />
+            </h5>
           </div>
           <div className="flex items-center font-semibold justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
             <h4 className="w-3/4 text-xs">
               StockOut SLA index(in %) - [0%=High SLA, 100% = min inv cost]
             </h4>
-            <h5 className="text-sm">0%</h5>
+            <h5 className="text-black text-sm font-semibold text-gray-50">
+              <input
+                type="text"
+                defaultValue={"0%"}
+                className="px-2 py-1.5 text-center rounded-sm bg-grey-200"
+                style={{ width: "50px" }}
+              />
+            </h5>
           </div>
           <div className="flex items-center justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
             <h4 className="w-3/4 text-xs">
               Buffer Stock Level(% of expected inventory level)
             </h4>
-            <h5 className="text-sm">10%</h5>
+            <h5 className="text-black text-sm font-semibold text-gray-50">
+              <input
+                type="text"
+                defaultValue={"10%"}
+                className="px-2 py-1.5 text-center rounded-sm bg-grey-200"
+                style={{ width: "50px" }}
+              />
+            </h5>
           </div>
           <div className="w-full flex items-center justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
             <h4 className="w-3/4 text-xs">No of Weeks in Forecast Periiod</h4>
-            <h5 className="text-sm">14</h5>
+            <h5 className="text-black text-sm font-semibold text-gray-50">
+              <input
+                type="text"
+                defaultValue={"14%"}
+                className="px-2 py-1.5 text-center rounded-sm bg-grey-200"
+                style={{ width: "50px" }}
+              />
+            </h5>
           </div>
           <div className="w-full flex items-center justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
             <h4 className="w-3/4 text-xs">
               AverageMargin (in %) - for stock out loos estimation
             </h4>
-            <h5 className="text-sm">50%</h5>
+            <h5 className="text-black text-sm font-semibold text-gray-50">
+              <input
+                type="text"
+                defaultValue={"50%"}
+                className="px-2 py-1.5 text-center rounded-sm bg-grey-200"
+                style={{ width: "50px" }}
+              />
+            </h5>
           </div>
         </div>
 

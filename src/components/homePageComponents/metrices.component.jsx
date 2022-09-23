@@ -56,7 +56,7 @@ const MetriceComponent = (props) => {
     (a, b) => a - b
   );
   var halfinvH = Math.floor(sortedInvHoldingValues.length / 2);
-  var halfSOL = Math.floor(sortedInvHoldingValues.length / 2);
+  var halfSOL = Math.floor(sortedStockOutLossValues.length / 2);
   var halfinvTT = Math.floor(sortedInvTurnValues.length / 2);
   var medianHoldingValue;
   var medianStockOutLossValue;

@@ -31,11 +31,13 @@ const MapChart = () => {
   const randomizeData = () => {};
   useEffect(() => {
     const RANDOM_COLOR_CONFIG = {};
-    const stateName = ALL_STATE_CODES[id];
-    const randomColorIndex = Math.floor(Math.random() * 5);
-    RANDOM_COLOR_CONFIG[stateName] = {
-      fill: GRAPH_COLORS[randomColorIndex],
-    };
+    if (id !== -1) {
+      const stateName = ALL_STATE_CODES[id];
+      const randomColorIndex = Math.floor(Math.random() * 5);
+      RANDOM_COLOR_CONFIG[stateName] = {
+        fill: GRAPH_COLORS[randomColorIndex],
+      };
+    }
 
     setStatesColorConfig(RANDOM_COLOR_CONFIG);
   }, [id]);

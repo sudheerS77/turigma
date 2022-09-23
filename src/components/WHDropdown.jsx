@@ -16,12 +16,9 @@ const WHDropdown = () => {
   const { id } = useParams();
   useEffect(() => {
     setWh(parseInt(id));
-    console.log(id);
   }, [id]);
-  console.log(wh);
 
   const handleChange = (e) => {
-    console.log(e.value);
     setWh(e.value);
     navigate(`/${e.value}`);
   };

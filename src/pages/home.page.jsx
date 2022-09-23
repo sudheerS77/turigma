@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import CostComponents from "../components/homePageComponents/cost.Components";
 import SettingsComponent from "../components/homePageComponents/settings.components";
 import TableComponent from "../components/homePageComponents/table.component";
-import TopChart from "../components/homePageComponents/barChart.component";
+import BarChartComponent from "../components/homePageComponents/barChart.component";
 import MapChart from "../components/homePageComponents/mapChart";
 import OptionsComponent from "../components/homePageComponents/options.components";
 import MetriceComponent from "../components/homePageComponents/metrices.component";
@@ -13,11 +13,24 @@ import MetriceComponent from "../components/homePageComponents/metrices.componen
 import data from "../components/homePageComponents/warehouse.json";
 import Metrice from "../components/homePageComponents/metrice";
 import { ALL_STATE_CODES } from "../components/constants/STATES";
+import { ALL_STATE_NAMES } from "../components/constants/state_names";
 
 const HomePage = () => {
   const { id } = useParams();
-  const mapData = [data[id - 1]];
-  const stateName = ALL_STATE_CODES[id];
+  var mapData = "";
+  var stateName = "";
+  // if (id !== "-1") {
+  //   if (id === 1) {
+  //     mapData = [data[id]];      
+  //   } else {
+  //     mapData = [data[id - 1]];
+  //   }
+  //   stateName = ALL_STATE_NAMES[id]["name"];
+  // }
+  if (id !== "-1") {
+    mapData = [data[id]];    
+    stateName = ALL_STATE_NAMES[id]["name"];
+  }
 
   // useEffect(() => {
   //   window.scroll({
@@ -48,7 +61,7 @@ const HomePage = () => {
             Inventory Level of each SKU (for region {stateName} & Warehouse -
             {id})
           </h4>
-          <TopChart data={mapData} />
+          <BarChartComponent data={mapData} />
         </div>
       </div>
     </>
@@ -76,3 +89,4 @@ export default HomePage;
 //           {/* <TableComponent data={data} /> */}
 //         </div>
 //       </div>
+
