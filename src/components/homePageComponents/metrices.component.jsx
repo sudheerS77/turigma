@@ -13,7 +13,7 @@ var MetriceComponent = (props) => {
   if (id === 0 || id < 0) {
     id = 1;
   }
-  if (id > 4) {
+  if (id > 15) {
     id = 1;
   }
   var whData = MetriceData[id - 1];

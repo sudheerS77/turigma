@@ -55,7 +55,7 @@ const HomePage = () => {
           </h4>
           <div className="w-full flex items-start justify-around py-5 bg-white border border-gray-100 rounded-md shadow-xl">
             <SettingsComponent />
-            {id && id >= 1 && id <= 4 ? (
+            {id && id >= 1 && id <= 15 ? (
               <MetriceComponent data={id} />
             ) : (
               <EmptyMetriceComponent />
