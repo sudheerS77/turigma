@@ -30,8 +30,8 @@ const SettingsComponent = () => {
         </span> */}
         <div className="flex items-center justify-center bg-gray-100 gap-5 text-md font-semibold border border-gray-300 w-full px-2 py-1 rounded-md shadow-md">
           Select Warehouse
-          {/* <DropDown /> */}
-          <WHDropdown />
+          <DropDown />
+          {/* <WHDropdown /> */}
         </div>
         <div className="w-full flex flex-col items-end justify-center gap-3 w-full p-2 rounded-md shadow-md">
           <div className="w-full flex items-center justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">

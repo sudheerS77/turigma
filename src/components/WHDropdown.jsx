@@ -24,7 +24,19 @@ const WHDropdown = () => {
     setWh(e.value);
     navigate(`/${e.value}`);
   };
-  return <Select options={options} defaultValue={wh} onChange={handleChange} />;
+  return (
+    <>
+      {/* <select name="" id="">
+        {[...Array(45)].map((name, i) => (
+          <option value={id} defaultValue={wh}>
+            {i + 1}
+          </option>
+        ))}
+      </select> */}
+      {/* <Select options={options} onChange={handleChange} /> */}
+      <Select options={options} defaultValue={wh} onChange={handleChange} />
+    </>
+  );
 };
 
 export default WHDropdown;

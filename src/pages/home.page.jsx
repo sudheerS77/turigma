@@ -30,8 +30,8 @@ const HomePage = () => {
   // }
   if (id) {
     if (id > 0) {
-      mapData = [data[id - 1]];
-      stateName = ALL_STATE_NAMES[id - 1].name;
+      mapData = [data[id]];
+      stateName = ALL_STATE_NAMES[id].name;
       console.log(stateName);
     } else {
       id = 1;
