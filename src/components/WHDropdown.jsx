@@ -11,7 +11,7 @@ const options = [];
 });
 
 const WHDropdown = () => {
-  const [wh, setWh] = useState();
+  var [wh, setWh] = useState();
   const navigate = useNavigate();
   const { id } = useParams();
   useEffect(() => {

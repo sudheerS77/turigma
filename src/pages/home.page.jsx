@@ -17,8 +17,7 @@ import { ALL_STATE_NAMES } from "../components/constants/state_names";
 
 const HomePage = () => {
   var { id } = useParams();
-  id = parseInt(id);
-  console.log(id);
+  
   var mapData = "";
   var stateName = "";
   // if (id !== "-1") {
@@ -29,12 +28,14 @@ const HomePage = () => {
   //   }
   //   stateName = ALL_STATE_NAMES[id]["name"];
   // }
-  if (id > 0) {
-    mapData = [data[id - 1]];
-    stateName = ALL_STATE_NAMES[id - 1].name;
-    console.log(stateName);
-  } else {
-    id = 1;
+  if (id) {
+    if (id > 0) {
+      mapData = [data[id - 1]];
+      stateName = ALL_STATE_NAMES[id - 1].name;
+      console.log(stateName);
+    } else {
+      id = 1;
+    }
   }
   console.log(id);
   // useEffect(() => {
@@ -44,6 +45,7 @@ const HomePage = () => {
   //     behavior: "smooth",
   //   });
   // }, [id]);
+  console.log(id);
   return (
     <>
       <div className="w-full flex flex-col items-center justify-center gap-10 px-10">
@@ -53,7 +55,7 @@ const HomePage = () => {
           </h4>
           <div className="w-full flex items-start justify-around py-5 bg-white border border-gray-100 rounded-md shadow-xl">
             <SettingsComponent />
-            {id && id > 0 && id <= 4 ? (
+            {id && id >= 1 && id <= 4 ? (
               <MetriceComponent data={id} />
             ) : (
               <EmptyMetriceComponent />
