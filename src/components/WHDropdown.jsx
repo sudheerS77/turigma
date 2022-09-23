@@ -18,6 +18,8 @@ const WHDropdown = () => {
     setWh(parseInt(id));
   }, [id]);
 
+  console.log("id", id);
+
   const handleChange = (e) => {
     setWh(e.value);
     navigate(`/${e.value}`);
