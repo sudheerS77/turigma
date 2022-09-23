@@ -853,22 +853,7 @@
       "SKU3": -55,
       "SKU4": -2084,
       "SKU5": 2340,
-      "Total Forecast Sales": 5,
-      "Holding Cost1": 107626,
-      "Holding Cost2": 83052,
-      "Holding Cost3": 10949,
-      "Holding Cost4": 26607,
-      "Holding Cost5": 41230,
-      "Inv Turn1": 15.63,
-      "Inv Turn2": 18.99,
-      "Inv Turn3": 16.59,
-      "Inv Turn4": 18.04,
-      "Inv Turn5": 14.92,
-      "Stkout Cost1": 0,
-      "Stkout Cost2": -10185,
-      "Stkout Cost3": -82,
-      "Stkout Cost4": -4168,
-      "Stkout Cost5": 0
+      "Total Forecast Sales": 5      
     },
     {
       "WH": 4,

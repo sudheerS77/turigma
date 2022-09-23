@@ -17,7 +17,7 @@ const StateMap = ({ statesColorConfig }) => {
     //   }
     // });
     console.log(event.target.dataset.name);
-    const stateValue = ALL_STATE_CODES.indexOf(event.target.dataset.name);
+    const stateValue = ALL_STATE_CODES.indexOf(event.target.dataset.name) + 1;
     console.log("stateValue", stateValue);
     navigate(`/${stateValue}`);
   };

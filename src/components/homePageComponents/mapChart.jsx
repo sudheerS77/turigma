@@ -32,7 +32,7 @@ const MapChart = () => {
   useEffect(() => {
     const RANDOM_COLOR_CONFIG = {};
     if (id !== -1) {
-      const stateName = ALL_STATE_CODES[id];
+      const stateName = ALL_STATE_CODES[id - 1];
       const randomColorIndex = Math.floor(Math.random() * 5);
       RANDOM_COLOR_CONFIG[stateName] = {
         fill: GRAPH_COLORS[randomColorIndex],

@@ -1,58 +1,70 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import MetriceData from "./metrice.json";
 
-const MetriceComponent = (props) => {
-  const data = props.data;
+var MetriceComponent = (props) => {
+  // var data = props.data;
+  var { id } = useParams();
+  // console.log(data);
   // data[0].map((item) => {
   //   console.log(item);
   // });
-  const whData = data[0][0];
-  const invHoldingValues = [
+  id = parseInt(id);
+  if (id === 0 || id < 0) {
+    id = 1;
+  }
+  if (id > 4) {
+    id = 1;
+  }
+  var whData = MetriceData[id - 1];
+  console.log(whData);
+  var invHoldingValues = [
     whData["Holding Cost1"],
     whData["Holding Cost2"],
     whData["Holding Cost3"],
     whData["Holding Cost4"],
     whData["Holding Cost5"],
   ];
-  const stockOutLossValues = [
+  var stockOutLossValues = [
     whData["Stkout Cost1"],
     whData["Stkout Cost2"],
     whData["Stkout Cost3"],
     whData["Stkout Cost4"],
     whData["Stkout Cost5"],
   ];
-  const invTurnTotalValues = [
+  var invTurnTotalValues = [
     whData["Inv Turn1"],
     whData["Inv Turn2"],
     whData["Inv Turn3"],
     whData["Inv Turn4"],
     whData["Inv Turn5"],
   ];
-  const invHoldingCostTotal =
+  var invHoldingCostTotal =
     whData["Holding Cost1"] +
     whData["Holding Cost2"] +
     whData["Holding Cost3"] +
     whData["Holding Cost4"] +
     whData["Holding Cost5"];
-  const invTurnTotal =
+  var invTurnTotal =
     whData["Inv Turn1"] +
     whData["Inv Turn2"] +
     whData["Inv Turn3"] +
     whData["Inv Turn4"] +
     whData["Inv Turn5"];
-  const stockOutLossTotal =
+  var stockOutLossTotal =
     whData["Stkout Cost1"] +
     whData["Stkout Cost2"] +
     whData["Stkout Cost3"] +
     whData["Stkout Cost4"] +
     whData["Stkout Cost5"];
   // invMedian.sort();
-  const sortedInvHoldingValues = Array.from(invHoldingValues).sort(
+  var sortedInvHoldingValues = Array.from(invHoldingValues).sort(
     (a, b) => a - b
   );
-  const sortedStockOutLossValues = Array.from(stockOutLossValues).sort(
+  var sortedStockOutLossValues = Array.from(stockOutLossValues).sort(
     (a, b) => a - b
   );
-  const sortedInvTurnValues = Array.from(invTurnTotalValues).sort(
+  var sortedInvTurnValues = Array.from(invTurnTotalValues).sort(
     (a, b) => a - b
   );
   var halfinvH = Math.floor(sortedInvHoldingValues.length / 2);
@@ -85,6 +97,14 @@ const MetriceComponent = (props) => {
       2.0;
   }
 
+  if (id === 0 || id < 0 || id > 45) {
+    invHoldingCostTotal = 0;
+    invTurnTotal = 0;
+    stockOutLossTotal = 0;
+    medianHoldingValue = 0;
+    medianStockOutLossValue = 0;
+    medianTurnValues = 0;
+  }
   return (
     <>
       <div className="w-4/12 border border-gray-100 rounded-md shadow-md p-2.5">
@@ -153,6 +173,7 @@ const MetriceComponent = (props) => {
           </div>
         </div>
       </div>
+      <div></div>
     </>
   );
 };

@@ -9,29 +9,34 @@ import BarChartComponent from "../components/homePageComponents/barChart.compone
 import MapChart from "../components/homePageComponents/mapChart";
 import OptionsComponent from "../components/homePageComponents/options.components";
 import MetriceComponent from "../components/homePageComponents/metrices.component";
+import EmptyMetriceComponent from "../components/homePageComponents/emptyMetrice.component";
 //Walmart Data
 import data from "../components/homePageComponents/warehouse.json";
-import Metrice from "../components/homePageComponents/metrice";
 import { ALL_STATE_CODES } from "../components/constants/STATES";
 import { ALL_STATE_NAMES } from "../components/constants/state_names";
 
 const HomePage = () => {
-  const { id } = useParams();
+  var { id } = useParams();
+  id = parseInt(id);
+  console.log(id);
   var mapData = "";
   var stateName = "";
   // if (id !== "-1") {
   //   if (id === 1) {
-  //     mapData = [data[id]];      
+  //     mapData = [data[id]];
   //   } else {
   //     mapData = [data[id - 1]];
   //   }
   //   stateName = ALL_STATE_NAMES[id]["name"];
   // }
-  if (id !== "-1") {
-    mapData = [data[id]];    
-    stateName = ALL_STATE_NAMES[id]["name"];
+  if (id > 0) {
+    mapData = [data[id - 1]];
+    stateName = ALL_STATE_NAMES[id - 1].name;
+    console.log(stateName);
+  } else {
+    id = 1;
   }
-
+  console.log(id);
   // useEffect(() => {
   //   window.scroll({
   //     top: 650,
@@ -48,12 +53,12 @@ const HomePage = () => {
           </h4>
           <div className="w-full flex items-start justify-around py-5 bg-white border border-gray-100 rounded-md shadow-xl">
             <SettingsComponent />
-            {id && id > 0 && id <= 2 ? (
-              <MetriceComponent data={mapData} />
+            {id && id > 0 && id <= 4 ? (
+              <MetriceComponent data={id} />
             ) : (
-              <Metrice />
+              <EmptyMetriceComponent />
             )}
-            <MapChart data={id} />
+            <MapChart />
           </div>
         </div>
         <div>
