@@ -211,12 +211,10 @@ const MapChart = () => {
 
     setGraphData(newGraphData);
   };
-  console.log(statesColorConfig);
 
   return (
     <>
       <div className="w-1/2 border border-gray-900 shadow-xs rounded-md">
-        <button onClick={randomizeData}>Click</button>
         <div style={{ flex: 0.4 }}>
           <StatesMap {...{ statesColorConfig }} />
         </div>
