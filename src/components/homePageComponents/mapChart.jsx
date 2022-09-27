@@ -9,8 +9,9 @@ import StatesMap from "../homePageComponents/stateMap";
 import { GRAPH_COLORS } from "../constants/graph_color";
 import { ALL_STATE_CODES } from "../constants/STATES";
 import { useParams } from "react-router-dom";
+import { GRAPH_DATA } from "../constants/GRAPH_DATA";
 
-const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json";
+// const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json";
 
 const colorScale = scaleQuantize().domain([1, 10]).range([
   "#0000FF",
@@ -26,24 +27,196 @@ const colorScale = scaleQuantize().domain([1, 10]).range([
 
 const MapChart = () => {
   const { id } = useParams();
-  const [statesColorConfig, setStatesColorConfig] = useState({});
+  const [statesColorConfig, setStatesColorConfig] = useState({
+    MD: {
+      fill: "blue",
+    },
+    GA: {
+      fill: "blue",
+    },
+    NH: {
+      fill: "red",
+    },
+    FL: {
+      fill: "green",
+    },
+    ID: {
+      fill: "green",
+    },
+    VA: {
+      fill: "red",
+    },
+    NM: {
+      fill: "red",
+    },
+    UT: {
+      fill: "red",
+    },
+    AR: {
+      fill: "green",
+    },
+    TX: {
+      fill: "red",
+    },
+    WI: {
+      fill: "green",
+    },
+    KY: {
+      fill: "green",
+    },
+    CA: {
+      fill: "blue",
+    },
+    IL: {
+      fill: "red",
+    },
+    NV: {
+      fill: "red",
+    },
+    KS: {
+      fill: "blue",
+    },
+    WA: {
+      fill: "green",
+    },
+    TN: {
+      fill: "green",
+    },
+    MA: {
+      fill: "red",
+    },
+    PA: {
+      fill: "red",
+    },
+    IA: {
+      fill: "red",
+    },
+    NJ: {
+      fill: "blue",
+    },
+    NY: {
+      fill: "green",
+    },
+    LA: {
+      fill: "red",
+    },
+    IN: {
+      fill: "blue",
+    },
+    MN: {
+      fill: "red",
+    },
+    OH: {
+      fill: "red",
+    },
+    MO: {
+      fill: "green",
+    },
+    OK: {
+      fill: "red",
+    },
+    WV: {
+      fill: "blue",
+    },
+    OR: {
+      fill: "green",
+    },
+    AZ: {
+      fill: "green",
+    },
+    MT: {
+      fill: "red",
+    },
+    CO: {
+      fill: "green",
+    },
+    CT: {
+      fill: "red",
+    },
+    DE: {
+      fill: "green",
+    },
+    MS: {
+      fill: "red",
+    },
+    ME: {
+      fill: "blue",
+    },
+    MI: {
+      fill: "blue",
+    },
+    SC: {
+      fill: "green",
+    },
+    NC: {
+      fill: "green",
+    },
+    NE: {
+      fill: "blue",
+    },
+    RI: {
+      fill: "green",
+    },
+    HI: {
+      fill: "red",
+    },
+    AL: {
+      fill: "red",
+    },
+  });
+  // const [statesColorConfig, setStatesColorConfig] = useState({});
+  const [graphData, setGraphData] = useState(GRAPH_DATA);
 
-  const randomizeData = () => {};
-  useEffect(() => {
+  // useEffect(() => {
+  //   const RANDOM_COLOR_CONFIG = {};
+  //   if (id !== -1) {
+  //     const stateName = ALL_STATE_CODES[id - 1];
+  //     const randomColorIndex = Math.floor(Math.random() * 5);
+  //     RANDOM_COLOR_CONFIG[stateName] = {
+  //       fill: GRAPH_COLORS[randomColorIndex],
+  //     };
+  //   }
+
+  //   setStatesColorConfig(RANDOM_COLOR_CONFIG);
+  // }, [id]);
+
+  const randomizeData = () => {
+    // Randomize colors
     const RANDOM_COLOR_CONFIG = {};
-    if (id !== -1) {
-      const stateName = ALL_STATE_CODES[id - 1];
+
+    ALL_STATE_CODES.forEach((state) => {
       const randomColorIndex = Math.floor(Math.random() * 5);
-      RANDOM_COLOR_CONFIG[stateName] = {
+
+      RANDOM_COLOR_CONFIG[state] = {
         fill: GRAPH_COLORS[randomColorIndex],
       };
-    }
+    });
 
     setStatesColorConfig(RANDOM_COLOR_CONFIG);
-  }, [id]);
+
+    // Randomize graph
+    const currentGraphData = [...graphData];
+
+    const newGraphData = currentGraphData.map((metric) => {
+      const randomMetric = {};
+      Object.keys(metric).forEach((property) => {
+        if (property !== "name") {
+          randomMetric[property] = Math.floor(Math.random() * 10000);
+        }
+      });
+      randomMetric.name = metric.name;
+
+      return randomMetric;
+    });
+
+    setGraphData(newGraphData);
+  };
+  console.log(statesColorConfig);
+
   return (
     <>
-      <div className="w-1/2 border border-gray-100 shadow-xs rounded-md">
+      <div className="w-1/2 border border-gray-900 shadow-xs rounded-md">
+        <button onClick={randomizeData}>Click</button>
         <div style={{ flex: 0.4 }}>
           <StatesMap {...{ statesColorConfig }} />
         </div>
