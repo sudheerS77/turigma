@@ -43,8 +43,18 @@ const MapChart = () => {
   }, [id]);
   return (
     <>
-      <div className="w-4/12 bg-gray-50 border border-gray-100 shadow-md rounded-md">
-        {/* <ComposableMap projection="geoAlbersUsa">
+      <div className="w-1/2 bg-gray-100 border border-gray-100 shadow-xs rounded-md">
+        <div style={{ flex: 0.4 }}>
+          <StatesMap {...{ statesColorConfig }} />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default MapChart;
+{
+  /* <ComposableMap projection="geoAlbersUsa">
           <Geographies geography={geoUrl}>
             {({ geographies }) =>
               geographies.map((geo) => {
@@ -59,22 +69,14 @@ const MapChart = () => {
               })
             }
           </Geographies>
-        </ComposableMap> */}
-        <div className="input-map-container">
-          <div style={{ flex: 0.6, textAlign: "center", padding: 24 }}>
-            {/* <button onClick={randomizeData}>Go Crazy!</button> */}
-          </div>
-          <div style={{ flex: 0.4 }}>
-            <StatesMap {...{ statesColorConfig }} />
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
-
-export default MapChart;
-
+        </ComposableMap> */
+}
+{
+  /* <div style={{ flex: 0.6, textAlign: "center" }}>
+            <button onClick={randomizeData}>Go Crazy!</button>
+          </div> */
+}
+          
 // import React from "react";
 // import {
 //   ComposableMap,

@@ -9,7 +9,7 @@ const SettingsComponent = () => {
   const [state, setState] = useState({ x: 10, y: 10 });
   return (
     <>
-      <div className="w-3/12 flex flex-col items-start gap-3 shadow-xl px-3 py-2 border border-gray-100 rounded-md">
+      <div className="w-6/12 flex flex-col items-start gap-3 bg-gray-100 shadow-sm px-3 py-2 border border-gray-100 rounded-md">
         <h4 className="text-xl font-semibold">Input Metrics</h4>
         {/* <span className="w-1/2">
           <Slider
@@ -35,7 +35,7 @@ const SettingsComponent = () => {
         </div>
         <div className="w-full flex flex-col items-end justify-center gap-3 w-full p-2 rounded-md shadow-md">
           <div className="w-full flex items-center justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
-            <h4 className="w-3/4 text-xs font-semibold  text-gray-50">
+            <h4 className="w-full text-xs font-semibold  text-gray-50">
               Forecast Tolerage (in %) - [confidence interval]
             </h4>
             <h5 className="text-black text-sm font-semibold text-gray-50">
@@ -47,8 +47,8 @@ const SettingsComponent = () => {
               />
             </h5>
           </div>
-          <div className="flex items-center font-semibold justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
-            <h4 className="w-3/4 text-xs">
+          <div className="w-full flex items-center font-semibold justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
+            <h4 className="w-full text-xs">
               StockOut SLA index(in %) - [0%=High SLA, 100% = min inv cost]
             </h4>
             <h5 className="text-black text-sm font-semibold text-gray-50">
@@ -60,8 +60,8 @@ const SettingsComponent = () => {
               />
             </h5>
           </div>
-          <div className="flex items-center justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
-            <h4 className="w-3/4 text-xs">
+          <div className="w-full flex items-center justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
+            <h4 className="w-full text-xs">
               Buffer Stock Level(% of expected inventory level)
             </h4>
             <h5 className="text-black text-sm font-semibold text-gray-50">
@@ -74,7 +74,7 @@ const SettingsComponent = () => {
             </h5>
           </div>
           <div className="w-full flex items-center justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
-            <h4 className="w-3/4 text-xs">No of Weeks in Forecast Periiod</h4>
+            <h4 className="w-full text-xs">No of Weeks in Forecast Periiod</h4>
             <h5 className="text-black text-sm font-semibold text-gray-50">
               <input
                 type="text"
@@ -85,7 +85,7 @@ const SettingsComponent = () => {
             </h5>
           </div>
           <div className="w-full flex items-center justify-center gap-2 bg-azure-blue px-2 py-1 rounded-md font-semibold text-gray-50">
-            <h4 className="w-3/4 text-xs">
+            <h4 className="w-full text-xs">
               AverageMargin (in %) - for stock out loos estimation
             </h4>
             <h5 className="text-black text-sm font-semibold text-gray-50">

@@ -104,10 +104,10 @@ const BarCharComponent = (value) => {
 
   // console.log("DATA", data);
   return (
-    <div className="w-full shadow-xl flex items-center justify-center border border-gray-100 rounded-md z-0">
+    <div className="w-full shadow-xl flex items-center justify-center bg-gray-100 border border-gray-100 rounded-md z-0">
       <BarChart
-        width={1400}
-        height={450}
+        width={1000}
+        height={400}
         data={data}
         margin={{
           top: 20,
@@ -121,11 +121,11 @@ const BarCharComponent = (value) => {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar barSize={10} dataKey="SKU1" fill="#00008B" />
-        <Bar barSize={10} dataKey="SKU2" fill="#D46381" />
-        <Bar barSize={10} dataKey="SKU3" fill="#165BAA" />
-        <Bar barSize={10} dataKey="SKU4" fill="#FC7979" />
-        <Bar barSize={10} dataKey="SKU5" fill="#0B1354" />
+        <Bar barSize={5} dataKey="SKU1" fill="#00008B" />
+        <Bar barSize={5} dataKey="SKU2" fill="#D46381" />
+        <Bar barSize={5} dataKey="SKU3" fill="#165BAA" />
+        <Bar barSize={5} dataKey="SKU4" fill="#FC7979" />
+        <Bar barSize={5} dataKey="SKU5" fill="#0B1354" />
       </BarChart>
     </div>
   );

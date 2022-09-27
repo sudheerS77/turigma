@@ -53,22 +53,26 @@ const HomePage = () => {
           <h4 className="text-center text-2xl font-bold">
             Inventory Placement What-If Simulation: Channel Mode
           </h4>
-          <div className="w-full flex items-start justify-around py-5 bg-white border border-gray-100 rounded-md shadow-xl">
+          <div className="w-full flex items-start justify-around gap-3 py-5">
             <SettingsComponent />
-            {id && id >= 1 && id <= 15 ? (
-              <MetriceComponent data={id} />
-            ) : (
-              <EmptyMetriceComponent />
-            )}
-            <MapChart />
+            <div className="8/12 flex flex-col items-center justify-center gap-10">
+              <div className="w-full h-3/5 flex items-start justify-around gap-2 bg-gray-100 border border-gray-100 rounded-md shadow-sm p-4">
+                {id && id >= 1 && id <= 15 ? (
+                  <MetriceComponent data={id} />
+                ) : (
+                  <EmptyMetriceComponent />
+                )}
+                <MapChart />
+              </div>
+              <div className="w-full">
+                <h4 className="text-center text-2xl font-bold">
+                  Inventory Level of each SKU (for region {stateName} &
+                  Warehouse -{id})
+                </h4>
+                <BarChartComponent data={mapData} />
+              </div>
+            </div>
           </div>
-        </div>
-        <div>
-          <h4 className="text-center text-2xl font-bold">
-            Inventory Level of each SKU (for region {stateName} & Warehouse -
-            {id})
-          </h4>
-          <BarChartComponent data={mapData} />
         </div>
       </div>
     </>
@@ -76,24 +80,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
-
-
-
-// <div className="pb-44 px-10 ">
-//         <div className="w-full h-auto flex items-start justify-center gap-3 mb-20">
-//           <div className="w-1/2 flex flex-col items-center justify-center gap-2">
-//             {/* <OptionsComponent /> */}
-//             <SettingsComponent />
-//             {/* <CostComponents /> */}
-//           </div>
-//           <div className="w-1/2">
-//             <MapChart />
-//           </div>
-//         </div>
-//         <div className="w-full flex flex-col items-start justify-center gap-4">
-//           <TopChart data={data} />
-//           {/* <TableComponent data={data} /> */}
-//         </div>
-//       </div>
 
