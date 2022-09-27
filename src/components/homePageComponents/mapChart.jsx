@@ -43,7 +43,7 @@ const MapChart = () => {
   }, [id]);
   return (
     <>
-      <div className="w-1/2 bg-gray-100 border border-gray-100 shadow-xs rounded-md">
+      <div className="w-1/2 border border-gray-100 shadow-xs rounded-md">
         <div style={{ flex: 0.4 }}>
           <StatesMap {...{ statesColorConfig }} />
         </div>

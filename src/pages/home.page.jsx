@@ -48,15 +48,15 @@ const HomePage = () => {
   console.log(id);
   return (
     <>
-      <div className="w-full flex flex-col items-center justify-center gap-10 px-10">
-        <div>
-          <h4 className="text-center text-2xl font-bold">
+      <div className="w-full h-full ">
+        <div className="flex flex-col items-center justify-center px-10">
+          <h4 className="text-center text-xl font-semibold">
             Inventory Placement What-If Simulation: Channel Mode
           </h4>
-          <div className="w-full flex items-start justify-around gap-3 py-5">
+          <div className="w-full h-auto flex items-start justify-around gap-3 py-5">
             <SettingsComponent />
-            <div className="8/12 flex flex-col items-center justify-center gap-10">
-              <div className="w-full h-3/5 flex items-start justify-around gap-2 bg-gray-100 border border-gray-100 rounded-md shadow-sm p-4">
+            <div className="w-10/12 flex flex-col items-center justify-center gap-10">
+              <div className="w-full h-3/5 flex items-start justify-around gap-2 bg-white border border-gray-100 rounded-xl shadow-sm p-4">
                 {id && id >= 1 && id <= 15 ? (
                   <MetriceComponent data={id} />
                 ) : (
@@ -65,7 +65,7 @@ const HomePage = () => {
                 <MapChart />
               </div>
               <div className="w-full">
-                <h4 className="text-center text-2xl font-bold">
+                <h4 className="text-center text-2xl font-bold pt-4 pb-5">
                   Inventory Level of each SKU (for region {stateName} &
                   Warehouse -{id})
                 </h4>

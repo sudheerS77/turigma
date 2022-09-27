@@ -4,7 +4,7 @@ import { Route, Router, Routes } from "react-router-dom";
 import Navbar from "./components/navbar";
 const App = () => {
   return (
-    <div className="app" style={{ background: "#cce5ff" }}>
+    <div className="bg-gray-50">
       <Navbar />
       <div className="relative top-36">
         <Routes>
