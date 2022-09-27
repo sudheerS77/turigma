@@ -256,7 +256,7 @@ const StateMap = ({ statesColorConfig }) => {
       <USAMap
         customize={statesColorConfig}
         width={500}
-        height={380}
+        height={370}
         onClick={mapHandler}
       />
     </div>
