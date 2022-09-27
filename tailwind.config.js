@@ -11,6 +11,8 @@ module.exports = {
         "blue-green": "#53DFD1",
         "midnight-blue": "#0C2D48",
         "azure-blue": "#007FFF",
+        "b-color": "#D4DEF1",
+        "b1-color": "#F0F0F7",
       },
     },
   },

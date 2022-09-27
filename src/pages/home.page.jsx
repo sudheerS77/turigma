@@ -48,7 +48,7 @@ const HomePage = () => {
   console.log(id);
   return (
     <>
-      <div className="w-full h-full ">
+      <div className="w-full h-full bg-b1-color">
         <div className="flex flex-col items-center justify-center px-10">
           <h4 className="text-center text-xl font-semibold">
             Inventory Placement What-If Simulation: Channel Mode
