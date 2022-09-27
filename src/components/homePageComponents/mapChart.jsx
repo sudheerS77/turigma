@@ -29,10 +29,10 @@ const MapChart = () => {
   const { id } = useParams();
   const [statesColorConfig, setStatesColorConfig] = useState({
     MD: {
-      fill: "blue",
+      fill: "yellow",
     },
     GA: {
-      fill: "blue",
+      fill: "yellow",
     },
     NH: {
       fill: "red",
@@ -65,7 +65,7 @@ const MapChart = () => {
       fill: "green",
     },
     CA: {
-      fill: "blue",
+      fill: "yellow",
     },
     IL: {
       fill: "red",
@@ -74,7 +74,7 @@ const MapChart = () => {
       fill: "red",
     },
     KS: {
-      fill: "blue",
+      fill: "yellow",
     },
     WA: {
       fill: "green",
@@ -92,7 +92,7 @@ const MapChart = () => {
       fill: "red",
     },
     NJ: {
-      fill: "blue",
+      fill: "yellow",
     },
     NY: {
       fill: "green",
@@ -101,7 +101,7 @@ const MapChart = () => {
       fill: "red",
     },
     IN: {
-      fill: "blue",
+      fill: "yellow",
     },
     MN: {
       fill: "red",
@@ -116,7 +116,7 @@ const MapChart = () => {
       fill: "red",
     },
     WV: {
-      fill: "blue",
+      fill: "yellow",
     },
     OR: {
       fill: "green",
@@ -140,10 +140,10 @@ const MapChart = () => {
       fill: "red",
     },
     ME: {
-      fill: "blue",
+      fill: "yellow",
     },
     MI: {
-      fill: "blue",
+      fill: "yellow",
     },
     SC: {
       fill: "green",
@@ -152,7 +152,7 @@ const MapChart = () => {
       fill: "green",
     },
     NE: {
-      fill: "blue",
+      fill: "yellow",
     },
     RI: {
       fill: "green",
@@ -214,7 +214,7 @@ const MapChart = () => {
 
   return (
     <>
-      <div className="w-1/2 border border-gray-900 shadow-xs rounded-md">
+      <div className="w-1/2 border-2 border-gray-300 shadow-md rounded-md">
         <div style={{ flex: 0.4 }}>
           <StatesMap {...{ statesColorConfig }} />
         </div>

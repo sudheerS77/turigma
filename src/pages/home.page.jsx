@@ -48,24 +48,26 @@ const HomePage = () => {
   console.log(id);
   return (
     <>
-      <div className="w-full h-full bg-b1-color">
+      <div className="w-full h-full bg-b3-color">
         <div className="flex flex-col items-center justify-center px-10">
-          <h4 className="text-center text-xl font-semibold">
-            Inventory Placement What-If Simulation: Channel Mode
-          </h4>
           <div className="w-full h-auto flex items-start justify-around gap-3 py-5">
             <SettingsComponent />
-            <div className="w-10/12 flex flex-col items-center justify-center gap-10">
-              <div className="w-full h-3/5 flex items-start justify-around gap-2 bg-white border border-gray-100 rounded-xl shadow-sm p-4">
-                {id && id >= 1 && id <= 15 ? (
-                  <MetriceComponent data={id} />
-                ) : (
-                  <EmptyMetriceComponent />
-                )}
-                <MapChart />
+            <div className="w-10/12 flex flex-col items-center justify-center gap-4 ">
+              <div className="w-full h-3/5 flex flex-col items-center justify-center gap-3 bg-gray-200 border border-gray-100 rounded-xl shadow-sm p-4">
+                <h4 className="text-center text-xl font-bold">
+                  Inventory Placement What-If Simulation: Channel Mode
+                </h4>
+                <div className="flex items-start justify-around gap-2">
+                  {id && id >= 1 && id <= 15 ? (
+                    <MetriceComponent data={id} />
+                  ) : (
+                    <EmptyMetriceComponent />
+                  )}
+                  <MapChart />
+                </div>
               </div>
-              <div className="w-full">
-                <h4 className="text-center text-2xl font-bold pt-4 pb-5">
+              <div className="w-full shadow-xl flex flex-col items-center justify-center bg-gray-200 border border-gray-100 rounded-md z-0">
+                <h4 className="text-center text-xl font-bold pt-4 pb-5">
                   Inventory Level of each SKU (for region {stateName} &
                   Warehouse -{id})
                 </h4>

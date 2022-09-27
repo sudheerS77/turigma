@@ -104,7 +104,7 @@ const BarCharComponent = (value) => {
 
   // console.log("DATA", data);
   return (
-    <div className="w-full shadow-xl flex items-center justify-center bg-white border border-gray-100 rounded-md z-0">
+    <div className="w-full">
       <BarChart
         width={1000}
         height={400}

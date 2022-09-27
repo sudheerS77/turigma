@@ -3,7 +3,7 @@ import React from "react";
 const EmptyMetriceComponent = () => {
   return (
     <>
-      <div className="w-1/2 h-full border-2 border-gray-200 rounded-md shadow-xs p-2.5">
+      <div className="w-1/2 h-full border-2 border-gray-300 rounded-md shadow-xs p-2.5  rounded-md shadow-md">
         <h6 className="text-xl font-bold text-center py-2 text-center">
           Output Metrics
         </h6>

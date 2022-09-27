@@ -4,9 +4,9 @@ import { Route, Router, Routes } from "react-router-dom";
 import Navbar from "./components/navbar";
 const App = () => {
   return (
-    <div className="bg-b1-color">
+    <div className="bg-b3-color">
       <Navbar />
-      <div className="relative top-36">
+      <div className="relative top-28">
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/:id" element={<HomePage />}></Route>

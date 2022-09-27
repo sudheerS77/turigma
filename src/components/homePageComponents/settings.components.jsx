@@ -15,7 +15,7 @@ const SettingsComponent = () => {
         //   boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
         //   border: "1px solid rgba( 255, 255, 255, 0.18 );",
         // }}
-        className="w-6/12 bg-white flex flex-col items-start gap-5 bg-gray-100 shadow-sm py-2 border border-gray-100 rounded-xl"
+        className="w-6/12 bg-gray-200 flex flex-col items-start gap-4 bg-gray-100 shadow-sm py-2 border border-gray-100 rounded-xl"
       >
         <h4 className="text-xl font-bold text-center w-full pt-3">
           Input Metrics
@@ -27,7 +27,7 @@ const SettingsComponent = () => {
           </div>
           {/* <WHDropdown /> */}
         </div>
-        <div className="w-full px-2 border-b-2 border-gray-300 px-3 pb-4">
+        <div className="w-full px-2 border-b-2 border-gray-300 px-3 py-4 bg-gray-300">
           <label for="customRange2" class="form-label"></label>
           <input
             type="range"
@@ -38,9 +38,14 @@ const SettingsComponent = () => {
             defaultValue="0"
             id="customRange2"
           ></input>
+          <span className="flex items-center justify-between text-sm font-light text-black">
+            <p>0</p>
+            <p>0.5</p>
+            <p>1</p>
+          </span>
         </div>
-        <div className="w-full flex flex-col items-end justify-center gap-4 w-full pb-64 px-3">
-          <div className="w-full flex items-center justify-center gap-2 px-2 py-1 rounded-md font-semibold  border-2 border-gray-400">
+        <div className="w-full flex flex-col items-end justify-center gap-4 w-full pb-72 px-3">
+          <div className="w-full flex items-center justify-center gap-2 px-2 py-1 rounded-md font-semibold  border-2 border-blue-800">
             <h4 className="w-full text-xs font-semibold ">
               Forecast Tolerage (in %) - [confidence interval]
             </h4>
@@ -53,7 +58,7 @@ const SettingsComponent = () => {
               />
             </h5>
           </div>
-          <div className="w-full flex items-center font-semibold justify-center gap-2 px-2 py-1 rounded-md font-semibold  border-2 border-gray-400">
+          <div className="w-full flex items-center font-semibold justify-center gap-2 px-2 py-1 rounded-md font-semibold  border-2 border-blue-800">
             <h4 className="w-full text-xs">
               StockOut SLA index(in %) - [0%=High SLA, 100% = min inv cost]
             </h4>
@@ -66,7 +71,7 @@ const SettingsComponent = () => {
               />
             </h5>
           </div>
-          <div className="w-full flex items-center justify-center gap-2 px-2 py-1 rounded-md font-semibold  border-2 border-gray-400">
+          <div className="w-full flex items-center justify-center gap-2 px-2 py-1 rounded-md font-semibold  border-2 border-blue-800">
             <h4 className="w-full text-xs">
               Buffer Stock Level(% of expected inventory level)
             </h4>
@@ -79,7 +84,7 @@ const SettingsComponent = () => {
               />
             </h5>
           </div>
-          <div className="w-full flex items-center justify-center gap-2 px-2 py-1 rounded-md font-semibold  border-2 border-gray-400">
+          <div className="w-full flex items-center justify-center gap-2 px-2 py-1 rounded-md font-semibold  border-2 border-blue-800">
             <h4 className="w-full text-xs">No of Weeks in Forecast Periiod</h4>
             <h5 className="text-black text-sm font-semibold">
               <input
@@ -90,7 +95,7 @@ const SettingsComponent = () => {
               />
             </h5>
           </div>
-          <div className="w-full flex items-center justify-center gap-2 px-2 py-1 rounded-md font-semibold  border-2 border-gray-400">
+          <div className="w-full flex items-center justify-center gap-2 px-2 py-1 rounded-md font-semibold  border-2 border-blue-800">
             <h4 className="w-full text-xs">
               AverageMargin (in %) - for stock out loos estimation
             </h4>
