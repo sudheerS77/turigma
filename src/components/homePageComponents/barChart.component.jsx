@@ -102,32 +102,58 @@ const BarCharComponent = (value) => {
     },
   ];
 
-  // console.log("DATA", data);
+  console.log("DATA", data);
   return (
-    <div className="w-full">
-      <BarChart
-        width={1000}
-        height={400}
-        data={data}
-        margin={{
-          top: 20,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        {/* <CartesianGrid strokeDasharray="3 3" /> */}
-        <XAxis dataKey="Date" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar barSize={5} dataKey="SKU1" fill="#00008B" />
-        <Bar barSize={5} dataKey="SKU2" fill="#D46381" />
-        <Bar barSize={5} dataKey="SKU3" fill="#165BAA" />
-        <Bar barSize={5} dataKey="SKU4" fill="#FC7979" />
-        <Bar barSize={5} dataKey="SKU5" fill="#0B1354" />
-      </BarChart>
-    </div>
+    <>
+      <div className="hidden lg:block w-full">
+        <BarChart
+          width={1000}
+          height={400}
+          data={data}
+          margin={{
+            top: 20,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          {/* <CartesianGrid strokeDasharray="3 3" /> */}
+          <XAxis dataKey="Date" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar barSize={5} dataKey="SKU1" fill="#00008B" />
+          <Bar barSize={5} dataKey="SKU2" fill="#D46381" />
+          <Bar barSize={5} dataKey="SKU3" fill="#165BAA" />
+          <Bar barSize={5} dataKey="SKU4" fill="#FC7979" />
+          <Bar barSize={5} dataKey="SKU5" fill="#0B1354" />
+        </BarChart>
+      </div>
+      <div className="lg:hidden w-full">
+        <BarChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 20,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          {/* <CartesianGrid strokeDasharray="3 3" /> */}
+          <XAxis dataKey="Date" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar barSize={5} dataKey="SKU1" fill="#00008B" />
+          <Bar barSize={5} dataKey="SKU2" fill="#D46381" />
+          <Bar barSize={5} dataKey="SKU3" fill="#165BAA" />
+          <Bar barSize={5} dataKey="SKU4" fill="#FC7979" />
+          <Bar barSize={5} dataKey="SKU5" fill="#0B1354" />
+        </BarChart>
+      </div>
+    </>
   );
 };
 

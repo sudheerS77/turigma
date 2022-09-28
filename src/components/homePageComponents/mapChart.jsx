@@ -32,13 +32,13 @@ const MapChart = () => {
       fill: "yellow",
     },
     GA: {
-      fill: "yellow",
+      fill: "green",
     },
     NH: {
       fill: "red",
     },
     FL: {
-      fill: "green",
+      fill: "yellow",
     },
     ID: {
       fill: "green",
@@ -47,7 +47,7 @@ const MapChart = () => {
       fill: "red",
     },
     NM: {
-      fill: "red",
+      fill: "yellow",
     },
     UT: {
       fill: "red",
@@ -59,7 +59,7 @@ const MapChart = () => {
       fill: "red",
     },
     WI: {
-      fill: "green",
+      fill: "yellow",
     },
     KY: {
       fill: "green",
@@ -71,7 +71,7 @@ const MapChart = () => {
       fill: "red",
     },
     NV: {
-      fill: "red",
+      fill: "green",
     },
     KS: {
       fill: "yellow",
@@ -80,13 +80,13 @@ const MapChart = () => {
       fill: "green",
     },
     TN: {
-      fill: "green",
+      fill: "yellow",
     },
     MA: {
       fill: "red",
     },
     PA: {
-      fill: "red",
+      fill: "green",
     },
     IA: {
       fill: "red",
@@ -107,7 +107,7 @@ const MapChart = () => {
       fill: "red",
     },
     OH: {
-      fill: "red",
+      fill: "yellow",
     },
     MO: {
       fill: "green",
@@ -122,7 +122,7 @@ const MapChart = () => {
       fill: "green",
     },
     AZ: {
-      fill: "green",
+      fill: "yellow",
     },
     MT: {
       fill: "red",
@@ -140,7 +140,7 @@ const MapChart = () => {
       fill: "red",
     },
     ME: {
-      fill: "yellow",
+      fill: "green",
     },
     MI: {
       fill: "yellow",
@@ -149,7 +149,7 @@ const MapChart = () => {
       fill: "green",
     },
     NC: {
-      fill: "green",
+      fill: "red",
     },
     NE: {
       fill: "yellow",
@@ -214,7 +214,7 @@ const MapChart = () => {
 
   return (
     <>
-      <div className="w-1/2 border-2 border-gray-300 shadow-md rounded-md">
+      <div className="w-full lg:w-1/2 border-2 border-gray-300 shadow-md rounded-md">
         <div style={{ flex: 0.4 }}>
           <StatesMap {...{ statesColorConfig }} />
         </div>

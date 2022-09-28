@@ -252,14 +252,24 @@ const StateMap = ({ statesColorConfig }) => {
   };
   
   return (
-    <div className="w-full flex items-center justify-center">
-      <USAMap
-        customize={statesColorConfig}
-        width={500}
-        height={370}
-        onClick={mapHandler}
-      />
-    </div>
+    <>
+      <div className="hidden lg:block w-full flex items-center justify-center">
+        <USAMap
+          customize={statesColorConfig}
+          width={500}
+          height={350}
+          onClick={mapHandler}
+        />
+      </div>
+      <div className="lg:hidden w-full flex items-center justify-center">
+        <USAMap
+          customize={statesColorConfig}
+          width={300}
+          height={200}
+          onClick={mapHandler}
+        />
+      </div>
+    </>
   );
 };
 
