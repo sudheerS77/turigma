@@ -15,41 +15,44 @@ const SettingsComponent = () => {
         //   boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
         //   border: "1px solid rgba( 255, 255, 255, 0.18 );",
         // }}
-        className="w-full lg:w-4/12 h-full bg-gray-100 flex flex-col items-start gap-4 bg-gray-100 shadow-sm py-2 border border-gray-100 rounded-xl pb-2"
+        className="w-full lg:w-4/12 h-full bg-gray-100 flex flex-col items-start bg-gray-100 shadow-sm py-2 border border-gray-100 rounded-xl"
       >
-        <h4 className="text-xl font-bold text-center w-full pt-3">
-          Input Metrics
-        </h4>
-        <div className="pt-2 lg:pb-20">
-          <div className="w-full px-3 border-b-2 border-gray-300 px-3 pb-4">
+        <h4 className="text-xl font-bold text-center w-full ">Input Metrics</h4>
+        <div className="pt-2">
+          <div className="w-full px-3 px-3">
             <div>
-              <div className="flex items-center justify-between bg-gray-100 text-lg text-gray-800 font-semibold border border-gray-300 px-3 py-1 rounded-md shadow-md">
+              <div className="flex items-center pb-2 justify-between bg-gray-100 text-lg text-gray-800 font-semibold border border-gray-300 px-3 py-1 rounded-md shadow-md">
                 Warehouse
                 <DropDown />
               </div>
               {/* <WHDropdown /> */}
             </div>
-            <div className="w-full px-2 border-b-2 border-gray-200 px-3 py-4 bg-gray-100">
-              <label for="customRange2" class="form-label"></label>
-              <input
-                type="range"
-                class="form-range"
-                min="0"
-                max="1"
-                step="0.5"
-                defaultValue="0"
-                id="customRange2"
-              ></input>
-              <span className="flex items-center justify-between text-sm font-medium text-black">
-                <p>0</p>
-                <p>0.5</p>
-                <p>1</p>
-              </span>
-              <h4 className="w-full text-sm  text-center">StockOut SLA index</h4>
+            <div className="w-full flex items-center justify-between px-2 px-3 bg-gray-100">
+              <label for="customRange2" class="form-label">
+                <h4 className="w-full text-sm  text-center">
+                  StockOut SLA index
+                </h4>
+              </label>
+              <div>
+                <input
+                  type="range"
+                  class="form-range"
+                  min="0"
+                  max="1"
+                  step="0.5"
+                  defaultValue="0"
+                  id="customRange2"
+                ></input>
+                <span className="flex items-center justify-between text-sm font-medium text-black">
+                  <p>0</p>
+                  <p>0.5</p>
+                  <p>1</p>
+                </span>
+              </div>
             </div>
           </div>
-          <div className="w-full flex flex-col items-end justify-center gap-4 w-full px-3 lg:pb-80">
-            <div className="w-full flex items-center justify-center gap-2 px-2 py-1 rounded-md font-semibold">
+          <div className="w-full flex flex-col items-end justify-center gap-4 w-full px-3">
+            <div className="w-full flex items-center justify-center px-2 rounded-md font-semibold">
               <h4 className="w-full text-sm  font-semibold ">
                 Forecast Tolerage (in %) - [confidence interval]
               </h4>
@@ -62,7 +65,7 @@ const SettingsComponent = () => {
                 />
               </h5>
             </div>
-            {/* <div className="w-full flex items-center font-semibold justify-center gap-2 px-2 py-1 rounded-md font-semibold">
+            {/* <div className="w-full flex items-center font-semibold justify-center gap-2 px-2 rounded-md font-semibold">
             <h4 className="w-full text-sm ">
               StockOut SLA index(in %) - [0%=High SLA, 100% = min inv cost]
             </h4>
@@ -75,7 +78,7 @@ const SettingsComponent = () => {
               />
             </h5>
           </div> */}
-            <div className="w-full flex items-center justify-center gap-2 px-2 py-1 rounded-md font-semibold">
+            <div className="w-full flex items-center justify-center gap-2 px-2 rounded-md font-semibold">
               <h4 className="w-full text-sm ">
                 Buffer Stock Level(% of expected inventory level)
               </h4>
@@ -88,7 +91,7 @@ const SettingsComponent = () => {
                 />
               </h5>
             </div>
-            <div className="w-full flex items-center justify-center gap-2 px-2 py-1 rounded-md font-semibold">
+            <div className="w-full flex items-center justify-center gap-2 px-2 rounded-md font-semibold">
               <h4 className="w-full text-sm ">
                 No of Weeks in Forecast Periiod
               </h4>
@@ -101,7 +104,7 @@ const SettingsComponent = () => {
                 />
               </h5>
             </div>
-            <div className="w-full flex items-center justify-center gap-2 px-2 py-1 rounded-md font-semibold">
+            <div className="w-full flex items-center justify-center gap-2 px-2 rounded-md font-semibold">
               <h4 className="w-full text-sm ">
                 AverageMargin (in %) - for stock out loos estimation
               </h4>

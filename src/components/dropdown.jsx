@@ -152,7 +152,7 @@ export default function MultipleSelectPlaceholder() {
   };
   return (
     <div>
-      <FormControl sx={{ m: 1, width: 100, mt: 0.5 }}>
+      <FormControl sx={{ m: 0, width: 100, mt: 0 }}>
         <Select
           displayEmpty
           value={personName ? personName : "WH"}
