@@ -38,15 +38,6 @@ const HomePage = () => {
       id = 1;
     }
   }
-  console.log(id);
-  // useEffect(() => {
-  //   window.scroll({
-  //     top: 650,
-  //     left: 0,
-  //     behavior: "smooth",
-  //   });
-  // }, [id]);
-  console.log(id);
   return (
     <>
       <div

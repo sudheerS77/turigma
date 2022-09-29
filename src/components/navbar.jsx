@@ -12,7 +12,7 @@ const Navbar = () => {
           /> */}
         </div>
         <div className="w-full text-center text-gray-50 font-bold">
-          <h4>Sales Prediction Model</h4>
+          <h4>Turigma AI Supply Chain Optimization</h4>
         </div>
       </div>
     </>

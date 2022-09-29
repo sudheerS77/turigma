@@ -50,10 +50,10 @@ const MapChart = () => {
       fill: "yellow",
     },
     UT: {
-      fill: "red",
+      fill: "yellow",
     },
     AR: {
-      fill: "green",
+      fill: "red",
     },
     TX: {
       fill: "red",
@@ -62,16 +62,16 @@ const MapChart = () => {
       fill: "yellow",
     },
     KY: {
-      fill: "green",
+      fill: "red",
     },
     CA: {
       fill: "yellow",
     },
     IL: {
-      fill: "red",
+      fill: "green",
     },
     NV: {
-      fill: "green",
+      fill: "red",
     },
     KS: {
       fill: "yellow",
@@ -80,10 +80,10 @@ const MapChart = () => {
       fill: "green",
     },
     TN: {
-      fill: "yellow",
+      fill: "red",
     },
     MA: {
-      fill: "red",
+      fill: "yellow",
     },
     PA: {
       fill: "green",
@@ -98,72 +98,73 @@ const MapChart = () => {
       fill: "green",
     },
     LA: {
-      fill: "red",
+      fill: "green",
     },
     IN: {
       fill: "yellow",
     },
     MN: {
-      fill: "red",
+      fill: "green",
     },
     OH: {
-      fill: "yellow",
-    },
-    MO: {
-      fill: "green",
-    },
-    OK: {
       fill: "red",
     },
-    WV: {
+    MO: {
       fill: "yellow",
     },
-    OR: {
+    OK: {
       fill: "green",
     },
+    WV: {
+      fill: "green",
+    },
+    OR: {
+      fill: "red",
+    },
     AZ: {
-      fill: "yellow",
+      fill: "green",
     },
     MT: {
       fill: "red",
     },
     CO: {
-      fill: "green",
+      fill: "red",
     },
     CT: {
-      fill: "red",
-    },
-    DE: {
       fill: "green",
     },
-    MS: {
+    DE: {
       fill: "red",
+    },
+    MS: {
+      fill: "yellow",
     },
     ME: {
       fill: "green",
     },
     MI: {
-      fill: "yellow",
+      fill: "red",
     },
     SC: {
-      fill: "green",
-    },
-    NC: {
-      fill: "red",
-    },
-    NE: {
       fill: "yellow",
     },
-    RI: {
+    NC: {
       fill: "green",
     },
-    HI: {
+    NE: {
       fill: "red",
+    },
+    RI: {
+      fill: "yellow",
+    },
+    HI: {
+      fill: "green",
     },
     AL: {
       fill: "red",
     },
   });
+
   // const [statesColorConfig, setStatesColorConfig] = useState({});
   const [graphData, setGraphData] = useState(GRAPH_DATA);
 

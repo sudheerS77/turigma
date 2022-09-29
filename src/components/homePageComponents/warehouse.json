@@ -1,6 +1,5 @@
 [
   [
-
     {
       "WH": 1,
       "Date": "7-Oct",
@@ -1100,6 +1099,26 @@
   [
     {
       "WH": 4,
+      "Date": "7-oct",
+      "Start Inv1": 48222,
+      "Start Inv2": 45172,
+      "Start Inv3": 4355,
+      "Start Inv4": 14083,
+      "Start Inv5": 13223,
+      "Bi weekly Inv Update1": 123769,
+      "Bi weekly Inv Update2": 115941,
+      "Bi weekly Inv Update3": 11205,
+      "Bi weekly Inv Update4": 36148,
+      "Bi weekly Inv Update5": 33940,
+      "SKU1": 81977,
+      "SKU2": 76792,
+      "SKU3": 7422,
+      "SKU4": 23942,
+      "SKU5": 22480,
+      "Total Forecast Sales": 5
+    },
+    {
+      "WH": 4,
       "Date": "14-Oct",
       "Start Inv1": 48222,
       "Start Inv2": 45172,
@@ -1457,8 +1476,9 @@
       "Holding Cost3": 10949,
       "Holding Cost4": 26607,
       "Holding Cost5": 41230
-    },
-
+    }
+  ],
+  [
     {
       "WH": 5,
       "Date": "07-Oct",
@@ -1488,9 +1508,7 @@
       "Holding Cost3": 2315,
       "Holding Cost4": 5007,
       "Holding Cost5": 5311
-    }
-  ],
-  [
+    },
     {
       "WH": 5,
       "Date": "14-Oct",
@@ -1850,7 +1868,9 @@
       "Holding Cost3": 2315,
       "Holding Cost4": 5007,
       "Holding Cost5": 5311
-    },
+    }
+  ],
+  [
     {
       "WH": 6,
       "Date": "07-Oct",
@@ -1880,9 +1900,7 @@
       "Holding Cost3": 11730,
       "Holding Cost4": 17914,
       "Holding Cost5": 32021
-    }
-  ],
-  [
+    },
     {
       "WH": 6,
       "Date": "14-Oct",
@@ -2242,7 +2260,9 @@
       "Holding Cost3": 11730,
       "Holding Cost4": 17914,
       "Holding Cost5": 32021
-    },
+    }
+  ],
+  [
     {
       "WH": 7,
       "Date": "07-Oct",
@@ -2272,9 +2292,7 @@
       "Holding Cost3": 7907,
       "Holding Cost4": 8346,
       "Holding Cost5": 15520
-    }
-  ],
-  [
+    },
     {
       "WH": 7,
       "Date": "14-Oct",
@@ -2634,7 +2652,9 @@
       "Holding Cost3": 7907,
       "Holding Cost4": 8346,
       "Holding Cost5": 15520
-    },
+    }
+  ],
+  [
     {
       "WH": 8,
       "Date": "07-Oct",
@@ -2664,9 +2684,7 @@
       "Holding Cost3": 5479,
       "Holding Cost4": 517,
       "Holding Cost5": 15635
-    }
-  ],
-  [
+    },
     {
       "WH": 8,
       "Date": "14-Oct",
@@ -3430,7 +3448,9 @@
       "Holding Cost3": 4562,
       "Holding Cost4": 7884,
       "Holding Cost5": 15207
-    },
+    }
+  ],
+  [
     {
       "WH": 10,
       "Date": "07-Oct",
@@ -3460,9 +3480,7 @@
       "Holding Cost3": 17803,
       "Holding Cost4": 20140,
       "Holding Cost5": 54381
-    }
-  ],
-  [
+    },
     {
       "WH": 10,
       "Date": "14-Oct",
@@ -3823,7 +3841,9 @@
       "Holding Cost3": 17803,
       "Holding Cost4": 20140,
       "Holding Cost5": 54381
-    },
+    }
+  ],
+  [
     {
       "WH": 11,
       "Date": "07-Oct",
@@ -3853,9 +3873,7 @@
       "Holding Cost3": 10151,
       "Holding Cost4": 13244,
       "Holding Cost5": 27227
-    }
-  ],
-  [
+    },
     {
       "WH": 11,
       "Date": "14-Oct",
@@ -4215,7 +4233,9 @@
       "Holding Cost3": 10151,
       "Holding Cost4": 13244,
       "Holding Cost5": 27227
-    },
+    }
+  ],
+  [
     {
       "WH": 12,
       "Date": "07-Oct",
@@ -4245,9 +4265,7 @@
       "Holding Cost3": 8508,
       "Holding Cost4": 11721,
       "Holding Cost5": 25934
-    }
-  ],
-  [
+    },
     {
       "WH": 12,
       "Date": "14-Oct",
@@ -4607,7 +4625,9 @@
       "Holding Cost3": 8508,
       "Holding Cost4": 11721,
       "Holding Cost5": 25934
-    },
+    }
+  ],
+  [
     {
       "WH": 13,
       "Date": "07-Oct",
@@ -4637,9 +4657,7 @@
       "Holding Cost3": 17319,
       "Holding Cost4": 20736,
       "Holding Cost5": 51748
-    }
-  ],
-  [
+    },
     {
       "WH": 13,
       "Date": "04-Nov",
@@ -4999,7 +5017,9 @@
       "Holding Cost3": 17319,
       "Holding Cost4": 20736,
       "Holding Cost5": 51748
-    },
+    }
+  ],
+  [
     {
       "WH": 14,
       "Date": "07-Oct",
@@ -5029,9 +5049,7 @@
       "Holding Cost3": 11714,
       "Holding Cost4": 24288,
       "Holding Cost5": 34654
-    }
-  ],
-  [
+    },
     {
       "WH": 14,
       "Date": "14-Oct",
@@ -5391,7 +5409,9 @@
       "Holding Cost3": 11714,
       "Holding Cost4": 24288,
       "Holding Cost5": 34654
-    },
+    }
+  ],
+  [
     {
       "WH": 15,
       "Date": "07-Oct",
@@ -5421,9 +5441,7 @@
       "Holding Cost3": 7361,
       "Holding Cost4": 5691,
       "Holding Cost5": 18704
-    }
-  ],
-  [
+    },
     {
       "WH": 15,
       "Date": "14-Oct",
