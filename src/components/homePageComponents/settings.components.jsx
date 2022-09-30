@@ -5,8 +5,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import TableComponent from "./table.component";
 import WHDropdown from "../WHDropdown";
 
-const SettingsComponent = () => {
+const SettingsComponent = ({ handleWeeks }) => {
   const [state, setState] = useState({ x: 10, y: 10 });
+  function handleWeeksChanges(e) {
+    if (e.target.value > 14) {
+      alert("Please select correct value");
+    } else {
+      handleWeeks(e.target.value);
+    }
+  }
   return (
     <>
       <div className="w-full lg:w-4/12 h-full bg-gray-100 flex flex-col gap-3 px-3.5 bg-gray-100 shadow-sm py-1 border border-gray-100 rounded-xl">
@@ -74,6 +81,7 @@ const SettingsComponent = () => {
               defaultValue={"14"}
               className="px-2 py-1.5 text-center rounded-sm bg-grey-400 shadow-sm"
               style={{ width: "50px" }}
+              onChange={handleWeeksChanges}
             />
           </span>
         </div>

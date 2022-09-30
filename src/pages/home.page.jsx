@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 //Components
@@ -18,7 +18,11 @@ import Metrice from "../components/homePageComponents/metrice";
 
 const HomePage = () => {
   var { id } = useParams();
-
+  const [weeks, setWeeks] = useState();
+  console.log({ weeks });
+  function handleWeeks(value) {
+    setWeeks(value);
+  }
   var mapData = "";
   var stateName = "";
   // if (id !== "-1") {
@@ -38,6 +42,15 @@ const HomePage = () => {
       id = 1;
     }
   }
+  var BarGraphData = [];
+  mapData.map((item) => {
+    BarGraphData.push();
+  });
+  for (var i = 0; i < weeks; i++) {
+    BarGraphData.push(mapData[0][i]);
+  }
+  console.log(BarGraphData);
+  console.log({ mapData });
   return (
     <>
       <div
@@ -69,10 +82,10 @@ const HomePage = () => {
                   Inventory Level of each SKU (for region {stateName} &
                   Warehouse -{id})
                 </h4>
-                <BarChartComponent data={mapData} />
+                <BarChartComponent data={BarGraphData} />
               </div>
             </div>
-            <SettingsComponent />
+            <SettingsComponent handleWeeks={handleWeeks} />
           </div>
         </div>
       </div>
@@ -81,4 +94,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-

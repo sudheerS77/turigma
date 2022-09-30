@@ -10,7 +10,7 @@ import {
 } from "recharts";
 
 const BarCharComponent = (value) => {
-  const data = value.data[0];
+  const data = value.data;
   const demo = [
     {
       WH: 1,
