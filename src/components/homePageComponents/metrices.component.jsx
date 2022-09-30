@@ -5,9 +5,7 @@ import MetriceData from "./metrice.json";
 var MetriceComponent = (props) => {
   // var data = props.data;
   var { id } = useParams();
-  // console.log(data);
   // data[0].map((item) => {
-  //   console.log(item);
   // });
   id = parseInt(id);
   if (id === 0 || id < 0) {
@@ -17,7 +15,6 @@ var MetriceComponent = (props) => {
     id = 1;
   }
   var whData = MetriceData[id - 1];
-  console.log(whData);
   var invHoldingValues = [
     whData["Holding Cost1"],
     whData["Holding Cost2"],

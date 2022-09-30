@@ -256,7 +256,7 @@ const StateMap = ({ statesColorConfig }) => {
       <div className="hidden lg:block w-full flex items-center justify-center">
         <USAMap
           customize={statesColorConfig}
-          width={500}
+          width={450}
           height={350}
           onClick={mapHandler}
         />

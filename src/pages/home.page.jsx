@@ -2,55 +2,37 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 //Components
-import CostComponents from "../components/homePageComponents/cost.Components";
-import SettingsComponent from "../components/homePageComponents/settings.components";
-import TableComponent from "../components/homePageComponents/table.component";
+import InputMetrics from "../components/homePageComponents/inputMetric.components";
 import BarChartComponent from "../components/homePageComponents/barChart.component";
 import MapChart from "../components/homePageComponents/mapChart";
-import OptionsComponent from "../components/homePageComponents/options.components";
 import MetriceComponent from "../components/homePageComponents/metrices.component";
 import EmptyMetriceComponent from "../components/homePageComponents/emptyMetrice.component";
-//Walmart Data
+
+//Warehouse Data
 import data from "../components/homePageComponents/warehouse.json";
-import { ALL_STATE_CODES } from "../components/constants/STATES";
 import { ALL_STATE_NAMES } from "../components/constants/state_names";
-import Metrice from "../components/homePageComponents/metrice";
 
 const HomePage = () => {
   var { id } = useParams();
-  const [weeks, setWeeks] = useState();
-  console.log({ weeks });
+  const [weeks, setWeeks] = useState(14);
   function handleWeeks(value) {
     setWeeks(value);
   }
   var mapData = "";
   var stateName = "";
-  // if (id !== "-1") {
-  //   if (id === 1) {
-  //     mapData = [data[id]];
-  //   } else {
-  //     mapData = [data[id - 1]];
-  //   }
-  //   stateName = ALL_STATE_NAMES[id]["name"];
-  // }
   if (id) {
-    if (id > 0) {
+    if (id > 0 && id < 16) {
       mapData = [data[id]];
       stateName = ALL_STATE_NAMES[id].name;
-      console.log(stateName);
-    } else {
-      id = 1;
     }
   }
   var BarGraphData = [];
-  mapData.map((item) => {
-    BarGraphData.push();
-  });
-  for (var i = 0; i < weeks; i++) {
-    BarGraphData.push(mapData[0][i]);
+
+  if (id > 0 && id < 16) {
+    for (var i = 0; i < weeks; i++) {
+      BarGraphData.push(mapData[0][i]);
+    }
   }
-  console.log(BarGraphData);
-  console.log({ mapData });
   return (
     <>
       <div
@@ -85,7 +67,7 @@ const HomePage = () => {
                 <BarChartComponent data={BarGraphData} />
               </div>
             </div>
-            <SettingsComponent handleWeeks={handleWeeks} />
+            <InputMetrics handleWeeks={handleWeeks} />
           </div>
         </div>
       </div>

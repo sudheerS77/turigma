@@ -215,7 +215,7 @@ const MapChart = () => {
 
   return (
     <>
-      <div className="w-full lg:w-1/2 border-2 border-gray-300 shadow-md rounded-md">
+      <div className="w-full lg:w-1/2 border-2 border-gray-300 shadow-md rounded-md flex items-center justify-center">
         <div style={{ flex: 0.4 }}>
           <StatesMap {...{ statesColorConfig }} />
         </div>

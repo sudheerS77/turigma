@@ -152,7 +152,7 @@ export default function MultipleSelectPlaceholder() {
   };
   return (
     <div>
-      <FormControl sx={{ m: 0, width: 100, mt: 0 }}>
+      <FormControl sx={{ m: 0, width: 70, mt: 0 }}>
         <Select
           displayEmpty
           value={personName ? personName : "WH"}
@@ -170,11 +170,11 @@ export default function MultipleSelectPlaceholder() {
         >
           {[...Array(45)].map((n, i) => (
             <MenuItem
-              key={i}
-              value={i}
+              key={i + 1}
+              value={i + 1}
               // style={getStyles(name, personName, theme)}
             >
-              {i}
+              {i + 1}
             </MenuItem>
           ))}
         </Select>

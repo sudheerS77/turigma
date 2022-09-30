@@ -102,7 +102,6 @@ const BarCharComponent = (value) => {
     },
   ];
 
-  console.log("DATA", data);
   return (
     <>
       <div className="hidden lg:block w-full">

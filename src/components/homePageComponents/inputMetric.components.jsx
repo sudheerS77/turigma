@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
-import Slider from 'react-input-slider';
-import DropDown from '../dropdown';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from "react";
+import Slider from "react-input-slider";
+import DropDown from "../dropdown";
+import "bootstrap/dist/css/bootstrap.min.css";
 import TableComponent from "./table.component";
 import WHDropdown from "../WHDropdown";
 
-const SettingsComponent = ({ handleWeeks }) => {
+const InputMetrics = ({ handleWeeks }) => {
   const [state, setState] = useState({ x: 10, y: 10 });
   function handleWeeksChanges(e) {
     if (e.target.value > 14) {
@@ -16,17 +16,17 @@ const SettingsComponent = ({ handleWeeks }) => {
   }
   return (
     <>
-      <div className="w-full lg:w-4/12 h-full bg-gray-100 flex flex-col gap-3 px-3.5 bg-gray-100 shadow-sm py-1 border border-gray-100 rounded-xl">
-        <h4 className="text-xl font-bold text-center w-full border-b border-gray-400">
+      <div className="w-full lg:w-4/12 h-full bg-gray-100 flex flex-col gap-4 px-3.5 bg-gray-100 shadow-sm py-1 border border-gray-100 rounded-xl">
+        <h4 className="text-xl font-bold text-center w-full border-b border-gray-400 py-4">
           Input Metrics
         </h4>
-        <div className="w-full flex items-center justify-between border-b border-gray-400">
+        <div className="w-full flex items-center justify-between border-b pb-2 border-gray-400">
           <span className="w-8/12"> Warehouse</span>
           <span className="w-4/12">
             <DropDown />
           </span>
         </div>
-        <div className="w-full flex items-center justify-between border-b border-gray-400">
+        <div className="w-full flex items-center justify-between border-b pb-2 border-gray-400">
           <label for="customRange2" class="form-label w-8/12">
             <h4 className="w-full text-sm">StockOut SLA index</h4>
           </label>
@@ -47,7 +47,7 @@ const SettingsComponent = ({ handleWeeks }) => {
             </span>
           </div>
         </div>
-        <div className="w-full flex items-center justify-around gap-2 font-semibold border-b border-gray-400">
+        <div className="w-full flex items-center justify-around gap-2 font-semibold border-b pb-2 border-gray-400">
           <h4 className="w-8/12 text-sm  font-semibold ">
             Forecast Tolerance (in %) - [confidence interval]
           </h4>
@@ -60,7 +60,7 @@ const SettingsComponent = ({ handleWeeks }) => {
             />
           </span>
         </div>
-        <div className="w-full flex items-center justify-center gap-2 font-semibold border-b border-gray-400">
+        <div className="w-full flex items-center justify-center gap-2 font-semibold border-b pb-2 border-gray-400">
           <h4 className="w-8/12 text-sm ">
             Buffer Stock Level (% of expected inventory level)
           </h4>
@@ -73,7 +73,7 @@ const SettingsComponent = ({ handleWeeks }) => {
             />
           </span>
         </div>
-        <div className="w-full flex items-center justify-center gap-2 font-semibold border-b border-gray-400">
+        <div className="w-full flex items-center justify-center gap-2 font-semibold border-b pb-2 border-gray-400">
           <h4 className="w-8/12 text-sm ">No of Weeks in Forecast Period</h4>
           <span className="text-black text-sm font-semibold w-4/12">
             <input
@@ -85,7 +85,7 @@ const SettingsComponent = ({ handleWeeks }) => {
             />
           </span>
         </div>
-        <div className="w-full flex items-center justify-center gap-2 font-semibold border-b border-gray-400">
+        <div className="w-full flex items-center justify-center gap-2 font-semibold border-b pb-2 border-gray-400">
           <h4 className="w-8/12 text-sm ">
             AverageMargin (in %) - for stock out Loss estimation
           </h4>
@@ -103,4 +103,4 @@ const SettingsComponent = ({ handleWeeks }) => {
   );
 };
 
-export default SettingsComponent
+export default InputMetrics;
