@@ -15,9 +15,10 @@ import { ALL_STATE_NAMES } from "../components/constants/state_names";
 const HomePage = () => {
   var { id } = useParams();
   const [weeks, setWeeks] = useState(14);
+  
   function handleWeeks(value) {
     setWeeks(value);
-  }
+  }  
   var mapData = "";
   var stateName = "";
   if (id) {
