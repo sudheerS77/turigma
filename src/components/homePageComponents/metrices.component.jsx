@@ -104,22 +104,26 @@ var MetriceComponent = (props) => {
   }
   return (
     <>
-      <div className="w-full lg:w-1/2 h-full rounded-md shadow-md p-2.5 border-2 border-gray-300">
+      <div
+        style={{
+          minHeight: "355px",
+        }}
+        className="w-full lg:w-1/2 rounded-md shadow-md p-2.5 border-2 border-gray-300"
+      >
         <h6 className="text-xl font-bold text-center py-1 text-center">
           Output Metrics
         </h6>
-
-        <div className="flex flex-wrap gap-6 text-gray-50 mx-2 pb-3">
+        <div className="flex flex-wrap gap-12 text-gray-50 mx-2 pb-3">
           {/* HOLDING */}
           <div className="w-full text-md text-gray-800 font-semibold py-2">
-            <div className="w-full grid grid-cols-4 text-center border-b border-gray-400 py-2.5">
+            <div className="w-full grid grid-cols-4 items-center justify-center text-center border-b border-gray-400 py-2.5">
               <div></div>
               <div>Total</div>
               <div>Average</div>
               <div>Median</div>
             </div>
             <div>
-              <div className="w-full text-center grid grid-cols-4 pt-2 pb-2 border-b border-gray-400 py-2.5">
+              <div className="w-full grid grid-cols-4 items-center justify-center text-center pt-2 pb-2 border-b border-gray-400 py-2.5">
                 <div className="text-sm">Inv. Holding Case</div>
                 <div>{invHoldingCostTotal}</div>
                 <div>{Math.round(invHoldingCostTotal / 5)}</div>
@@ -133,22 +137,22 @@ var MetriceComponent = (props) => {
               <div>Median</div>
             </div> */}
             <div>
-              <div className="w-full text-center grid grid-cols-4 pt-2 pb-2 border-b border-gray-400 py-2.5">
-                <div>Stock out loss</div>
+              <div className="w-full grid grid-cols-4 items-center justify-center text-center pt-2 pb-2 border-b border-gray-400 py-2.5">
+                <div className="text-sm">Stock out loss</div>
                 <div>{Math.abs(stockOutLossTotal)}</div>
                 <div>{Math.abs(Math.round(stockOutLossTotal / 5))}</div>
                 <div>{medianStockOutLossValue}</div>
               </div>
             </div>
-            <div className="w-full grid grid-cols-4 text-center border-b border-gray-400 py-2.5">
+            <div className="w-full grid grid-cols-4 items-center justify-center text-center border-b border-gray-400 py-2.5">
               <div></div>
               <div>Average</div>
               <div>Median</div>
               <div>Min</div>
             </div>
             <div>
-              <div className="w-full text-center grid grid-cols-4 pt-2 pb-2 border-b border-gray-400 py-2.5">
-                <div>Inventory Turns</div>
+              <div className="w-full grid grid-cols-4 items-center justify-center text-center pt-2 pb-2 border-b border-gray-400 py-2.5">
+                <div className="text-sm">Inventory Turns</div>
                 <div>{Math.round(invTurnTotal / 5)}</div>
                 <div>{medianTurnValues}</div>
                 <div>{sortedInvTurnValues[0]}</div>

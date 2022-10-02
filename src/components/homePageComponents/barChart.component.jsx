@@ -128,7 +128,7 @@ const BarCharComponent = (value) => {
           <Bar barSize={5} dataKey="SKU5" fill="#0B1354" />
         </BarChart>
       </div>
-      <div className="lg:hidden w-full">
+      <div className="hidden md:block lg:hidden w-full flex items-center justify-center">
         <BarChart
           width={500}
           height={300}
@@ -137,6 +137,30 @@ const BarCharComponent = (value) => {
             top: 20,
             right: 30,
             left: 20,
+            bottom: 5,
+          }}
+        >
+          {/* <CartesianGrid strokeDasharray="3 3" /> */}
+          <XAxis dataKey="Date" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar barSize={5} dataKey="SKU1" fill="#00008B" />
+          <Bar barSize={5} dataKey="SKU2" fill="#D46381" />
+          <Bar barSize={5} dataKey="SKU3" fill="#165BAA" />
+          <Bar barSize={5} dataKey="SKU4" fill="#FC7979" />
+          <Bar barSize={5} dataKey="SKU5" fill="#0B1354" />
+        </BarChart>
+      </div>
+      <div className="md:hidden w-full flex items-center justify-center">
+        <BarChart
+          width={350}
+          height={250}
+          data={data}
+          margin={{
+            top: 10,
+            right: 10,
+            left: 10,
             bottom: 5,
           }}
         >

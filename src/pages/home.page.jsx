@@ -23,8 +23,9 @@ const HomePage = () => {
   var stateName = "";
   if (id) {
     if (id > 0 && id < 16) {
-      mapData = [data[id]];
-      stateName = ALL_STATE_NAMES[id].name;
+      mapData = [data[id - 1]];
+      console.log({ id });
+      stateName = ALL_STATE_NAMES[id - 1].name;
     }
   }
   var BarGraphData = [];
@@ -44,14 +45,14 @@ const HomePage = () => {
             "linear-gradient(60deg, rgba(164,198,215,1) 0%, rgba(237,243,246,1) 52%, rgba(164,198,215,1) 100%)",
         }}
       >
-        <div className="flex flex-col items-center justify-center md:px-10">
+        <div className="flex flex-col items-center justify-center px-3 md:px-10">
           <div className="w-full h-auto flex flex-col-reverse lg:flex-row items-start justify-around gap-3 py-5">
             <div className="w-full lg:w-10/12 h-auto flex flex-col items-center justify-center gap-4">
               <div className="w-full h-full flex flex-col items-center justify-center gap-2 bg-gray-100 border border-gray-100 rounded-xl shadow-sm p-4">
-                <h4 className="text-center text-xl font-bold">
+                <h4 className="text-center text-md md:text-xl font-bold">
                   Inventory Placement What-If Simulation: Channel Mode
                 </h4>
-                <div className="flex sm:flex-col lg:flex-row items-start justify-around gap-2">
+                <div className="flex h-max flex-col lg:flex-row items-start justify-around gap-2">
                   {id && id >= 1 && id <= 15 ? (
                     <MetriceComponent data={id} />
                   ) : (
