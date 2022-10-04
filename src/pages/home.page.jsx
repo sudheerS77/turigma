@@ -69,7 +69,9 @@ const HomePage = () => {
                 <BarChartComponent data={BarGraphData} />
               </div>
             </div>
-            <InputMetrics handleWeeks={handleWeeks} />
+            <div className="lg:w-4/12">
+              <InputMetrics handleWeeks={handleWeeks} />
+            </div>
           </div>
         </div>
       </div>

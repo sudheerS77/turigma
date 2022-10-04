@@ -16,7 +16,7 @@ const InputMetricsComponent = ({ handleWeeks }) => {
   }
   return (
     <>
-      <div className="w-full bg-gray-100 flex flex-col gap-4 px-2 md:px-4 lg:px-3.5 xl:px-4 bg-gray-100 shadow-sm py-1 border border-gray-100 rounded-xl">
+      <div className="w-full h-full bg-gray-100 flex flex-col gap-4 px-2 md:px-4 lg:px-3.5 xl:px-4 bg-gray-100 shadow-sm py-1 border border-gray-100 rounded-xl">
         <h4 className="text-xl font-bold text-center w-full border-b border-gray-400 py-4">
           Input Metrics
         </h4>
@@ -107,12 +107,15 @@ const InputMetrics = ({ handleWeeks }) => {
   return (
     <>
       <div className="w-full">
-        <div style={{ minHeight: "985px" }} className="hidden lg:block w-full">
+        <div
+          style={{ height: "990px" }}
+          className="hidden lg:block w-full h-full lg:px-3"
+        >
           <InputMetricsComponent handleWeeks={handleWeeks} />
         </div>
-        <div className="w-full lg:hidden">
+        {/* <div className="w-full lg:hidden">
           <InputMetricsComponent handleWeeks={handleWeeks} />
-        </div>
+        </div> */}
       </div>
     </>
   );
