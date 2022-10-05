@@ -113,7 +113,7 @@ const InputMetrics = ({ handleWeeks }) => {
         >
           <InputMetricsComponent handleWeeks={handleWeeks} />
         </div>
-        <div className="w-full lg:hidden">
+        <div className="w-full lg:hidden flex items-center justify-center">
           <InputMetricsComponent handleWeeks={handleWeeks} />
         </div>
       </div>
