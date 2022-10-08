@@ -16,7 +16,7 @@ import { ALL_STATE_NAMES } from "../components/constants/state_names";
 const HomePage = () => {
   var { id } = useParams();
   const [weeks, setWeeks] = useState(14);
-  const [slaIndex, setSlaIndex] = useState(0);
+  const [slaIndex, setSlaIndex] = useState(-1);
   const [whData, setWhData] = useState([]);
   function handleWeeks(value) {
     setWeeks(value);
@@ -80,7 +80,7 @@ const HomePage = () => {
                 </h4>
                 <div className="flex h-max flex-col lg:flex-row items-start justify-around gap-2">
                   {id && id >= 1 && id <= 15 ? (
-                    <MetriceComponent data={id} />
+                    <MetriceComponent slaIndex={slaIndex} />
                   ) : (
                     <EmptyMetriceComponent />
                   )}

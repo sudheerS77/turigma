@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import MetriceData from "./metrice.json";
 
 var MetriceComponent = (props) => {
-  // var data = props.data;
   var { id } = useParams();
   // data[0].map((item) => {
   // });
@@ -14,7 +13,13 @@ var MetriceComponent = (props) => {
   if (id > 15) {
     id = 1;
   }
-  var whData = MetriceData[id - 1];
+  var whData;
+  if (id === 7 && parseFloat(props.slaIndex) === 0.4)
+    whData = MetriceData[1][0];
+  else if (id === 7 && parseFloat(props.slaIndex) === 1)
+    whData = MetriceData[1][1];
+  else whData = MetriceData[0][id - 1];
+
   var invHoldingValues = [
     whData["Holding Cost1"],
     whData["Holding Cost2"],
