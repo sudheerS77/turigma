@@ -15,7 +15,6 @@ const StateMap = ({ statesColorConfig }) => {
     } else {
       if (state && color) {
         statesColorConfig[state].fill = color;
-        console.log(statesColorConfig[state].fill, color);
       }
       setState(name);
       setColor(statesColorConfig[name].fill);
@@ -32,7 +31,6 @@ const StateMap = ({ statesColorConfig }) => {
     }
   }, [id]);
 
-  console.log(statesColorConfig);
 
   return (
     <>

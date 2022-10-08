@@ -148,7 +148,8 @@ export default function MultipleSelectPlaceholder() {
       // typeof value === "string" ? value.split(",") : value
       value
     );
-    navigate(`/${value}`);
+    if (value === 0) navigate(`/`);
+    else navigate(`/${value}`);
   };
   return (
     <div>
@@ -170,11 +171,11 @@ export default function MultipleSelectPlaceholder() {
         >
           {[...Array(45)].map((n, i) => (
             <MenuItem
-              key={i + 1}
-              value={i + 1}
+              key={i}
+              value={i}
               // style={getStyles(name, personName, theme)}
             >
-              {i + 1}
+              {i === 0 ? "All" : i}
             </MenuItem>
           ))}
         </Select>

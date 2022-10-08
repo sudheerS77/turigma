@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import TableComponent from "./table.component";
 import WHDropdown from "../WHDropdown";
 
-const InputMetricsComponent = ({ handleWeeks }) => {
+const InputMetricsComponent = ({ handleWeeks, handleSlaIndex }) => {
   const [state, setState] = useState({ x: 10, y: 10 });
   function handleWeeksChanges(e) {
     if (e.target.value > 14) {
@@ -21,12 +21,6 @@ const InputMetricsComponent = ({ handleWeeks }) => {
           Input Metrics
         </h4>
         <div className="w-full flex items-center justify-between border-b pb-2 border-gray-400">
-          <span className="w-8/12"> Warehouse</span>
-          <span className="w-4/12">
-            <DropDown />
-          </span>
-        </div>
-        <div className="w-full flex items-center justify-between border-b pb-2 border-gray-400">
           <label for="customRange2" class="form-label w-8/12">
             <h4 className="w-full text-sm">StockOut SLA index</h4>
           </label>
@@ -36,16 +30,24 @@ const InputMetricsComponent = ({ handleWeeks }) => {
               class="form-range"
               min="0"
               max="1"
-              step="0.5"
+              step="0.1"
               defaultValue="0"
+              onChange={handleSlaIndex}
               id="customRange2"
             ></input>
             <span className="flex items-center justify-between text-sm font-medium text-black">
               <p>0</p>
-              <p>0.5</p>
+              <p>0.4</p>
+              <p></p>
               <p>1</p>
             </span>
           </div>
+        </div>
+        <div className="w-full flex items-center justify-between border-b pb-2 border-gray-400">
+          <span className="w-8/12"> Warehouse</span>
+          <span className="w-4/12">
+            <DropDown />
+          </span>
         </div>
         <div className="w-full flex items-center justify-around gap-2 font-semibold border-b pb-2 border-gray-400">
           <h4 className="w-8/12 text-sm  font-semibold ">
@@ -103,7 +105,7 @@ const InputMetricsComponent = ({ handleWeeks }) => {
   );
 };
 
-const InputMetrics = ({ handleWeeks }) => {
+const InputMetrics = ({ handleWeeks, handleSlaIndex }) => {
   return (
     <>
       <div className="w-full">
@@ -111,10 +113,16 @@ const InputMetrics = ({ handleWeeks }) => {
           style={{ height: "990px" }}
           className="hidden lg:block w-full h-full lg:px-3"
         >
-          <InputMetricsComponent handleWeeks={handleWeeks} />
+          <InputMetricsComponent
+            handleWeeks={handleWeeks}
+            handleSlaIndex={handleSlaIndex}
+          />
         </div>
         <div className="w-full lg:hidden flex items-center justify-center">
-          <InputMetricsComponent handleWeeks={handleWeeks} />
+          <InputMetricsComponent
+            handleWeeks={handleWeeks}
+            handleSlaIndex={handleSlaIndex}
+          />
         </div>
       </div>
     </>

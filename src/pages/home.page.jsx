@@ -10,31 +10,57 @@ import EmptyMetriceComponent from "../components/homePageComponents/emptyMetrice
 
 //Warehouse Data
 import data from "../components/homePageComponents/warehouse.json";
+import wh7 from "../components/homePageComponents/wh7.json";
 import { ALL_STATE_NAMES } from "../components/constants/state_names";
 
 const HomePage = () => {
   var { id } = useParams();
   const [weeks, setWeeks] = useState(14);
-  
+  const [slaIndex, setSlaIndex] = useState(0);
+  const [whData, setWhData] = useState([]);
   function handleWeeks(value) {
     setWeeks(value);
-  }  
+  }
+  function handleSlaIndex(e) {
+    setSlaIndex(e.target.value);
+  }
   var mapData = "";
   var stateName = "";
   if (id) {
     if (id > 0 && id < 16) {
       mapData = [data[id - 1]];
-      console.log({ id });
       stateName = ALL_STATE_NAMES[id - 1].name;
     }
   }
   var BarGraphData = [];
+  let BarGraphData1 = [];
 
   if (id > 0 && id < 16) {
     for (var i = 0; i < weeks; i++) {
       BarGraphData.push(mapData[0][i]);
     }
   }
+  function changeBarData(ind) {
+    setWhData(wh7[ind]);
+    // for (var i = 0; i < weeks; i++) {
+    //   BarGraphData1.push(wh7[ind][i]);
+    // }
+  }
+  useEffect(() => {
+    if (id > 0 && id < 16) {
+      if (parseInt(id) === 7 && parseFloat(slaIndex) === 0.4) {
+        changeBarData(0);
+      } else if (parseInt(id) === 7 && parseFloat(slaIndex) === 1) {
+        changeBarData(1);
+      } else {
+        setWhData();
+        for (var k = 0; k < weeks; k++) {
+          BarGraphData.push(mapData[0][k]);
+        }
+      }
+    }
+  }, [slaIndex]);
+  console.log({ whData });
   return (
     <>
       <div
@@ -66,11 +92,14 @@ const HomePage = () => {
                   Inventory Level of each SKU (for region {stateName} &
                   Warehouse -{id})
                 </h4>
-                <BarChartComponent data={BarGraphData} />
+                <BarChartComponent data={BarGraphData} BarGraphData1={whData} />
               </div>
             </div>
             <div className="lg:w-4/12">
-              <InputMetrics handleWeeks={handleWeeks} />
+              <InputMetrics
+                handleWeeks={handleWeeks}
+                handleSlaIndex={handleSlaIndex}
+              />
             </div>
           </div>
         </div>

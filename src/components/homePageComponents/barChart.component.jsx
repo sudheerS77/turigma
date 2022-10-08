@@ -10,8 +10,8 @@ import {
 } from "recharts";
 
 const BarCharComponent = (value) => {
-  const data = value.data;
-  const demo = [
+  var data = value.data;
+  var demo = [
     {
       WH: 1,
       Date: "7-oct",
@@ -101,7 +101,11 @@ const BarCharComponent = (value) => {
       SKU5: 2235,
     },
   ];
-
+  if (value?.BarGraphData1?.length > 0) {
+    data = [];
+    data = value.BarGraphData1;
+  }
+  
   return (
     <>
       <div className="hidden lg:block w-full">
