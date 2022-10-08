@@ -40,6 +40,7 @@ const HomePage = () => {
       BarGraphData.push(mapData[0][i]);
     }
   }
+  console.log({ BarGraphData });
   function changeBarData(ind) {
     setWhData(wh7[ind]);
     // for (var i = 0; i < weeks; i++) {
