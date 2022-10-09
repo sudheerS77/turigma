@@ -105,7 +105,6 @@ const BarCharComponent = (value) => {
     data = [];
     data = value.BarGraphData1;
   }
-  console.log({ value });
   return (
     <>
       <div className="hidden lg:block w-full">

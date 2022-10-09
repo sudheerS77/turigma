@@ -25,7 +25,7 @@ const colorScale = scaleQuantize().domain([1, 10]).range([
   // "#4d4dff",
 ]);
 
-const MapChart = () => {
+const MapChart = ({ slaMapColor }) => {
   const { id } = useParams();
   const [statesColorConfig, setStatesColorConfig] = useState({
     MD: {
@@ -212,12 +212,13 @@ const MapChart = () => {
 
     setGraphData(newGraphData);
   };
-
+  statesColorConfig["NM"].fill = slaMapColor;
+  // console.log(statesColorConfig["NM"].fill);
   return (
     <>
       <div className="w-full lg:w-1/2 border-2 border-gray-300 shadow-md rounded-md flex items-center justify-center">
         <div style={{ flex: 0.4 }}>
-          <StatesMap {...{ statesColorConfig }} />
+          <StatesMap {...{ statesColorConfig, slaMapColor }} />
         </div>
       </div>
     </>

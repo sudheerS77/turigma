@@ -5,7 +5,7 @@ import USAMap from "react-usa-map";
 import { ALL_STATE_CODES } from "../constants/STATES";
 import { GRAPH_COLORS } from "../constants/graph_color";
 
-const StateMap = ({ statesColorConfig }) => {
+const StateMap = ({ statesColorConfig, slaMapColor }) => {
   const { id } = useParams();
   let navigate = useNavigate();
   const [state, setState] = useState();
@@ -23,14 +23,17 @@ const StateMap = ({ statesColorConfig }) => {
     const stateValue = ALL_STATE_CODES.indexOf(name) + 1;
     navigate(`/${stateValue}`);
   };
-  useEffect(() => {
-    const RANDOM_COLOR_CONFIG = {};
-    if (id > 0) {
-      const stateName = ALL_STATE_CODES[id - 1];
-      mapHandler(stateName);
-    }
-  }, [id]);
+  // useEffect(() => {
+  //   const RANDOM_COLOR_CONFIG = {};
+  //   if (id > 0) {
+  //     const stateName = ALL_STATE_CODES[id - 1];
+  //     mapHandler(stateName);
+  //   }
+  // }, [id]);
 
+  useEffect(() => {
+    statesColorConfig["NM"].fill = slaMapColor;
+  }, [slaMapColor]);
 
   return (
     <>

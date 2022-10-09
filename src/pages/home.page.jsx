@@ -18,10 +18,13 @@ const HomePage = () => {
   const [weeks, setWeeks] = useState(14);
   const [slaIndex, setSlaIndex] = useState(-1);
   const [whData, setWhData] = useState([]);
+  const [slaMapColor, setSlaMapColor] = useState("yellow");
+
   function handleWeeks(value) {
     setWeeks(value);
   }
   function handleSlaIndex(e) {
+    console.log(e.target.value);
     setSlaIndex(e.target.value);
   }
   var mapData = "";
@@ -40,9 +43,16 @@ const HomePage = () => {
       BarGraphData.push(mapData[0][i]);
     }
   }
-  console.log({ BarGraphData });
+
   function changeBarData(ind) {
     setWhData(wh7[ind]);
+    // if (parseInt(slaIndex) === 0) {
+    //   setSlaMapColor("red");
+    //   alert("red");
+    // } else
+    console.log(slaIndex);
+
+    // else setSlaMapColor("yellow");
     // for (var i = 0; i < weeks; i++) {
     //   BarGraphData1.push(wh7[ind][i]);
     // }
@@ -60,8 +70,18 @@ const HomePage = () => {
         }
       }
     }
+
+    if (slaIndex === "0.4") {
+      setSlaMapColor("#ffff33");
+    } else if (parseFloat(slaIndex) === 1) setSlaMapColor("#00ff00");
+    else if (slaIndex === "0") {
+      setSlaIndex("#ff4d4d");
+    } else {
+      setSlaIndex("orange");
+      // setSlaMapColor("red");
+    }
   }, [slaIndex]);
-  console.log({ whData });
+
   return (
     <>
       <div
@@ -85,7 +105,7 @@ const HomePage = () => {
                   ) : (
                     <EmptyMetriceComponent />
                   )}
-                  <MapChart />
+                  <MapChart slaMapColor={slaMapColor} />
                 </div>
               </div>
               <div className="w-full pb-2 shadow-sm flex flex-col items-center justify-center bg-gray-100 border border-gray-100 rounded-md z-0">
