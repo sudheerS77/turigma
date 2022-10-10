@@ -18,18 +18,12 @@ const HomePage = () => {
   const [weeks, setWeeks] = useState(14);
   const [slaIndex, setSlaIndex] = useState(-1);
   const [whData, setWhData] = useState([]);
-  const [slaMapColor, setSlaMapColor] = useState("yellow");
+  const [slaMapColor, setSlaMapColor] = useState("red");
 
   function handleWeeks(value) {
     setWeeks(value);
   }
   function handleSlaIndex(e) {
-    var temp = e.target.value;
-    if (temp === "0") {
-      setSlaMapColor("#00ff00");
-      console.log(slaMapColor);
-      console.log(typeof e.target.value);
-    }
     setSlaIndex(e.target.value);
   }
   var mapData = "";
@@ -76,12 +70,12 @@ const HomePage = () => {
     }
 
     if (slaIndex === "0.4") {
-      setSlaMapColor("#ffff33");
+      setSlaMapColor("#ffff99");
     } else if (parseFloat(slaIndex) === 1) setSlaMapColor("#00ff00");
     else if (slaIndex === "0") {
-      setSlaMapColor("#ff4d4d");
+      setSlaMapColor("red");
     } else {
-      setSlaMapColor("yellow");
+      setSlaMapColor("red");
       // setSlaMapColor("red");
     }
   }, [slaIndex]);

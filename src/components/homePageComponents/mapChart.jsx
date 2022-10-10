@@ -47,7 +47,7 @@ const MapChart = ({ slaMapColor }) => {
       fill: "red",
     },
     NM: {
-      fill: "yellow",
+      fill: "red",
     },
     UT: {
       fill: "yellow",
@@ -56,7 +56,7 @@ const MapChart = ({ slaMapColor }) => {
       fill: "red",
     },
     TX: {
-      fill: "red",
+      fill: "yellow",
     },
     WI: {
       fill: "yellow",
@@ -77,7 +77,7 @@ const MapChart = ({ slaMapColor }) => {
       fill: "yellow",
     },
     WA: {
-      fill: "green",
+      fill: "yellow",
     },
     TN: {
       fill: "red",
@@ -95,7 +95,7 @@ const MapChart = ({ slaMapColor }) => {
       fill: "yellow",
     },
     NY: {
-      fill: "green",
+      fill: "red",
     },
     LA: {
       fill: "green",
@@ -128,7 +128,7 @@ const MapChart = ({ slaMapColor }) => {
       fill: "red",
     },
     CO: {
-      fill: "red",
+      fill: "green",
     },
     CT: {
       fill: "green",
@@ -213,7 +213,7 @@ const MapChart = ({ slaMapColor }) => {
     setGraphData(newGraphData);
   };
   statesColorConfig["NM"].fill = slaMapColor;
-  // console.log(statesColorConfig["NM"].fill);
+  console.log(statesColorConfig["NM"].fill);
   return (
     <>
       <div className="w-full lg:w-1/2 border-2 border-gray-300 shadow-md rounded-md flex items-center justify-center">
