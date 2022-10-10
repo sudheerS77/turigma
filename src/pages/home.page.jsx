@@ -24,7 +24,12 @@ const HomePage = () => {
     setWeeks(value);
   }
   function handleSlaIndex(e) {
-    console.log(e.target.value);
+    var temp = e.target.value;
+    if (temp === "0") {
+      setSlaMapColor("#00ff00");
+      console.log(slaMapColor);
+      console.log(typeof e.target.value);
+    }
     setSlaIndex(e.target.value);
   }
   var mapData = "";
@@ -50,7 +55,6 @@ const HomePage = () => {
     //   setSlaMapColor("red");
     //   alert("red");
     // } else
-    console.log(slaIndex);
 
     // else setSlaMapColor("yellow");
     // for (var i = 0; i < weeks; i++) {
@@ -75,9 +79,9 @@ const HomePage = () => {
       setSlaMapColor("#ffff33");
     } else if (parseFloat(slaIndex) === 1) setSlaMapColor("#00ff00");
     else if (slaIndex === "0") {
-      setSlaIndex("#ff4d4d");
+      setSlaMapColor("#ff4d4d");
     } else {
-      setSlaIndex("orange");
+      setSlaMapColor("yellow");
       // setSlaMapColor("red");
     }
   }, [slaIndex]);
